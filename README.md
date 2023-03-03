@@ -28,7 +28,7 @@
 ### Things to know in Kotlin for Android Interview
 ### Kotlin for Android 面试须知
 
-- [掌握 kotlin 协程](https://github.com/youngWM/android-interview-questions-CN/blob/master/Kotlin%20for%20Android%20%E9%9D%A2%E8%AF%95%E9%A1%BB%E7%9F%A5/%E7%B2%BE%E9%80%9A%20Kotlin%20%E5%8D%8F%E7%A8%8B.md) 
+- [掌握 kotlin 协程](https://github.com/youngWM/android-interview-questions-CN/blob/master/Kotlin%20for%20Android%20%E9%9D%A2%E8%AF%95%E9%A1%BB%E7%9F%A5/%E6%8E%8C%E6%8F%A1%20Kotlin%20%E5%8D%8F%E7%A8%8B.md) 
 - [精通 Kotlin 协程](https://amitshekhar.me/blog/kotlin-coroutines) - 精通 Kotlin 协程
 - [Launch vs Async in Kotlin Coroutines](https://amitshekhar.me/blog/launch-vs-async-in-kotlin-coroutines) - Launch vs Async in Kotlin Coroutines
 - [Dispatchers in Kotlin Coroutines](https://amitshekhar.me/blog/dispatchers-in-kotlin-coroutines) - Dispatchers in Kotlin Coroutines
