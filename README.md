@@ -1,18 +1,19 @@
 <p align="center">
 <img alt="Android Interview Questions" src="https://raw.githubusercontent.com/amitshekhariitbhu/android-interview-questions/master/assets/banner-android-interview-questions.jpg">
 </p>
+ 
+# 安卓面试题
 
-# Android Interview Questions
-
-> Android Interview Questions - Your Cheat Sheet For Android Interview
+> Android 面试问题 - 你的 Android 面试备忘单
 
 ## Prepared and maintained by [Amit Shekhar](https://github.com/amitshekhariitbhu) who is having experience of taking interviews of many Android developers and cracking interviews of top companies.
+## 由[Amit Shekhar](https://github.com/amitshekhariitbhu)编写和维护，他有接受许多 Android 开发人员面试和顶级公司面试的经验。
 
-## About me
+## Amit Shekhar 自我介绍
 
-Hi, I am [**Amit Shekhar**](https://amitshekhar.me), I have mentored many developers, and their efforts landed them high-paying tech jobs, helped many tech companies in solving their unique problems, and created many open-source libraries being used by top companies. I am passionate about sharing knowledge through open-source, blogs, and videos.
+大家好，我是Amit Shekhar，我指导过很多开发人员，他们的努力让他们获得了高薪技术工作，帮助许多科技公司解决了他们独特的问题，并创建了许多被顶级公司使用的开源库。我热衷于通过开源、博客和视频分享知识。
 
-You can connect with me on:
+您可以通过以下方式与我联系：
 
 - [Twitter](https://twitter.com/amitiitbhu)
 - [YouTube](https://www.youtube.com/@amitshekhar)
@@ -20,12 +21,16 @@ You can connect with me on:
 - [GitHub](https://github.com/amitshekhariitbhu)
 
 ## High-quality videos to prepare for Android Interview - [Amit Shekhar YouTube Channel](https://www.youtube.com/@amitshekhar)
+## 为 Android 面试做准备的高质量视频 - [Amit Shekhar YouTube Channel](https://www.youtube.com/@amitshekhar)
 
 ## High-quality blogs to prepare for Android Interview - [Check here - Blog by Amit Shekhar](https://amitshekhar.me/blog)
+## 为 Android 面试做准备的高质量博客 -在这里查看 - [Check here - Blog by Amit Shekhar](https://amitshekhar.me/blog)
 
 ### Things to know in Kotlin for Android Interview
+### Kotlin for Android 面试须知
 
 - [Mastering Kotlin Coroutines](https://amitshekhar.me/blog/kotlin-coroutines) - Mastering Kotlin Coroutines
+- [精通 Kotlin 协程](https://amitshekhar.me/blog/kotlin-coroutines) - 精通 Kotlin 协程
 - [Launch vs Async in Kotlin Coroutines](https://amitshekhar.me/blog/launch-vs-async-in-kotlin-coroutines) - Launch vs Async in Kotlin Coroutines
 - [Dispatchers in Kotlin Coroutines](https://amitshekhar.me/blog/dispatchers-in-kotlin-coroutines) - Dispatchers in Kotlin Coroutines
 - [coroutineScope vs supervisorScope](https://amitshekhar.me/blog/coroutinescope-vs-supervisorscope) - coroutineScope vs supervisorScope
@@ -187,7 +192,7 @@ Android Interview Questions:
 * **What is `Intent`?**
 
 * **What is an Implicit `Intent`?**
-        
+
 * **What is an Explicit `Intent`?**
 
 * **What is a `BroadcastReceiver`?** - [Learn from here](https://developer.android.com/guide/components/broadcasts)
@@ -244,13 +249,13 @@ Android Interview Questions:
 
 * **What is the relationship between the life cycle of an `AsyncTask` and an `Activity`? What problems can this result in? How can these problems be avoided?**
     - An AsyncTask is not tied to the life cycle of the Activity that contains it. So, for example, if you start an AsyncTask inside an Activity and the user rotates the device, the Activity will be destroyed (and a new Activity instance will be created) but the AsyncTask will not die but instead goes on living until it completes.
-    
+
     - Then, when the AsyncTask does complete, rather than updating the UI of the new Activity, it updates the former instance of the Activity (i.e., the one in which it was created but that is not displayed anymore!). This can lead to an Exception (of the type java.lang.IllegalArgumentException: View not attached to window manager if you use, for instance, findViewById to retrieve a view inside the Activity).
-    
+
     - There’s also the potential for this to result in a memory leak since the AsyncTask maintains a reference to the Activity, which prevents the Activity from being garbage collected as long as the AsyncTask remains alive.
 
     - For these reasons, using AsyncTasks for long-running background tasks is generally a bad idea . Rather, for long-running background tasks, a different mechanism (such as a service) should be employed.
-    
+
     - Note: AsyncTasks by default run on a single thread using a serial executor, meaning it has only 1 thread and each task runs one after the other.
 
 * **Explain `Looper`, `Handler` and `HandlerThread`.**
@@ -272,7 +277,7 @@ Android Interview Questions:
 
 * **How to persist data in an Android app?**
 
-* **What is ORM? How does it work?** 
+* **What is ORM? How does it work?**
 
 * **How would you preserve `Activity` state during a screen rotation?** - [Learn from here](https://stackoverflow.com/questions/3915952/how-to-save-state-during-orientation-change-in-android-if-the-state-is-made-of-m)
 
@@ -291,7 +296,7 @@ Android Interview Questions:
 * **What is a `Spannable`?**
 
 * **What is a `SpannableString`?**
-   - A SpannableString has immutable text, but its span information is mutable. Use a SpannableString when your text doesn't need to be changed but the styling does. Spans are ranges over the text that include styling information like color, heighliting, italics, links, etc
+    - A SpannableString has immutable text, but its span information is mutable. Use a SpannableString when your text doesn't need to be changed but the styling does. Spans are ranges over the text that include styling information like color, heighliting, italics, links, etc
 
 * **What are the best practices for using text in Android?**
 
@@ -408,15 +413,15 @@ Android Interview Questions:
 * **How will you handle error in RxJava?**
 
 * **FlatMap Vs Map Operator** - [Learn from here](https://amitshekhar.me/blog/rxjava-map-vs-flatmap)
-    
+
 * **When to use `Create` operator and when to use `fromCallable` operator of RxJava?** - Learn from here: [RxJava Create and fromCallable Operator](https://amitshekhar.me/blog/rxjava-create-and-fromcallable-operator)
-    
+
 * **When to use `defer` operator of RxJava?** - Learn from here: [RxJava Defer Operator](https://amitshekhar.me/blog/rxjava-defer-operator)
-    
+
 * **How are Timer, Delay, and Interval operators used in RxJava?** - [Learn from here](https://amitshekhar.me/blog/rxjava-interval-operator)
 
 * **How to make two network calls in parallel using RxJava?** - [RxJava Zip Operator](https://amitshekhar.me/blog/rxjava-zip-operator)
-    
+
 * **Tell the difference between Concat and Merge.** - [Learn from here](https://amitshekhar.me/blog/rxjava-concat-operator) and [here](https://amitshekhar.me/blog/rxjava-merge-operator)
 
 * **Explain Subject in RxJava?** - [Learn from here](https://amitshekhar.me/blog/rxjava-subject-publish-replay-behavior-async)
@@ -509,7 +514,7 @@ Android Interview Questions:
 
 * **What is Robolectric?** - [Learn from here](http://robolectric.org/)
 
-* **What are the disadvantages of using Robolectric?** - [Learn from here](https://stackoverflow.com/questions/18271474/robolectric-vs-android-test-framework) 
+* **What are the disadvantages of using Robolectric?** - [Learn from here](https://stackoverflow.com/questions/18271474/robolectric-vs-android-test-framework)
 
 * **What is UI-Automator?** - [Learn from here](https://developer.android.com/training/testing/ui-testing/uiautomator-testing.html)
 
@@ -578,16 +583,16 @@ Android Interview Questions:
 #### OOP
 
 * **Explain OOP Concepts.**
-    - Object-Oriented Programming is a methodology of designing a program using classes, objects, 
-    [inheritance](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)),
-    [polymorphism](https://en.wikipedia.org/wiki/Polymorphism_(computer_science)),
-    [abstraction](https://en.wikipedia.org/wiki/Abstraction_(software_engineering)), and
-    [encapsulation](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)).
+    - Object-Oriented Programming is a methodology of designing a program using classes, objects,
+      [inheritance](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)),
+      [polymorphism](https://en.wikipedia.org/wiki/Polymorphism_(computer_science)),
+      [abstraction](https://en.wikipedia.org/wiki/Abstraction_(software_engineering)), and
+      [encapsulation](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)).
 
 * **What is the difference between a constructor and a method?**
     - The name of the constructor is same as that of the class name, whereas the name of the method can be anything.
     - There is no return type of a constructor.
-    - When you make an object of a class, then the constructor of that class will be called automatically. 
+    - When you make an object of a class, then the constructor of that class will be called automatically.
       But for methods, we need to call it explicitely.
     - Constructors can't be inherited but you can call the constructor of the parent class by calling `super()`.
     - Constructor and a method they both run a block of code but the difference is in calling them.
@@ -602,10 +607,10 @@ Android Interview Questions:
         }
         ```
     - Note:
-        In the above syntax, the name of the constructor is the same as that of class
-        and it has no return type.
-        
-    - Method Syntax 
+      In the above syntax, the name of the constructor is the same as that of class
+      and it has no return type.
+
+    - Method Syntax
         ```java
         public class SomeClassName{
             public void someMethodName(parameter_list){
@@ -615,13 +620,13 @@ Android Interview Questions:
             someMethodName(parameter_list)
         }
         ```
-* **Differences between abstract classes and interfaces?** 
-    - An abstract class, is a class that contains both concrete and abstract methods 
-    (methods without implementations). An abstract method must be implemented by the abstract class
-     sub-classes. Abstract classes cannot be instantiated and need to be extended to be used.
-    - An interface is like a blueprint/contract of a class (or it may be thought of as a class with methods, but without their implementation). It contains empty methods that 
-    represent, what all of its subclasses should have in common. The subclasses provide the 
-    implementation for each of these methods. Interfaces are implemented.
+* **Differences between abstract classes and interfaces?**
+    - An abstract class, is a class that contains both concrete and abstract methods
+      (methods without implementations). An abstract method must be implemented by the abstract class
+      sub-classes. Abstract classes cannot be instantiated and need to be extended to be used.
+    - An interface is like a blueprint/contract of a class (or it may be thought of as a class with methods, but without their implementation). It contains empty methods that
+      represent, what all of its subclasses should have in common. The subclasses provide the
+      implementation for each of these methods. Interfaces are implemented.
 
 * **What is the difference between iterator and enumeration in java?**
     - In Enumeration we don't have remove() method and we can only read and traverse through a collection.
@@ -630,14 +635,14 @@ Android Interview Questions:
 * **Do you agree we use composition over inheritance?**
 
 * **Difference between method overloading and overriding.**
-        <p align="center">
-        <img alt="Overloading and Overriding" src="https://raw.githubusercontent.com/amitshekhariitbhu/android-interview-questions/master/assets/overloading-vs-overriding.png">
-        </p>
+  <p align="center">
+  <img alt="Overloading and Overriding" src="https://raw.githubusercontent.com/amitshekhariitbhu/android-interview-questions/master/assets/overloading-vs-overriding.png">
+  </p>
     - Overloading happens at compile-time while Overriding happens at runtime: The binding of overloaded method call to its definition happens at compile-time however binding of overridden method call to its definition happens at runtime.
-    More info on static vs. dynamic binding: [StackOverflow](https://stackoverflow.com/questions/19017258/static-vs-dynamic-binding-in-java).
+      More info on static vs. dynamic binding: [StackOverflow](https://stackoverflow.com/questions/19017258/static-vs-dynamic-binding-in-java).
     - Static methods can be overloaded which means a class can have more than one static method of same name. Static methods cannot be overridden, even if you declare a same static method in child class it has nothing to do with the same method of parent class as overridden static methods are chosen by the reference class and not by the class of the object.
 
-        So, for example:
+      So, for example:
         ```java
         public class Animal {
             public static void testClassMethod() {
@@ -667,7 +672,7 @@ Android Interview Questions:
             }
         }
         ```
-        Will output:
+      Will output:
         ```java
         The static method in Cat    // testClassMethod() is called from "Cat" reference
 
@@ -678,49 +683,49 @@ Android Interview Questions:
                                     // but from "Cat" object underneath
         ```
 
-        The most basic difference is that overloading is being done in the same class while for overriding base and child classes are required. Overriding is all about giving a specific implementation to the inherited method of parent class.
+      The most basic difference is that overloading is being done in the same class while for overriding base and child classes are required. Overriding is all about giving a specific implementation to the inherited method of parent class.
 
-        Static binding is being used for overloaded methods and dynamic binding is being used for overridden/overriding methods.
-        Performance: Overloading gives better performance compared to overriding. The reason is that the binding of overridden methods is being done at runtime.
+      Static binding is being used for overloaded methods and dynamic binding is being used for overridden/overriding methods.
+      Performance: Overloading gives better performance compared to overriding. The reason is that the binding of overridden methods is being done at runtime.
 
-        Private and final methods can be overloaded but they cannot be overridden. It means a class can have more than one private/final methods of same name but a child class cannot override the private/final methods of their base class.
+      Private and final methods can be overloaded but they cannot be overridden. It means a class can have more than one private/final methods of same name but a child class cannot override the private/final methods of their base class.
 
-        Return type of method does not matter in case of method overloading, it can be same or different. However in case of method overriding the overriding method can have more specific return type (meaning if, for example, base method returns an instance of Number class, all overriding methods can return any class that is extended from Number, but not a class that is higher in the hierarchy, like, for example, Object is in this particular case).
+      Return type of method does not matter in case of method overloading, it can be same or different. However in case of method overriding the overriding method can have more specific return type (meaning if, for example, base method returns an instance of Number class, all overriding methods can return any class that is extended from Number, but not a class that is higher in the hierarchy, like, for example, Object is in this particular case).
 
-        Argument list should be different while doing method overloading. Argument list should be same in method Overriding.
-        It is also a good practice to annotate overridden methods with `@Override` to make the compiler be able to notify you if child is, indeed, overriding parent's class method during compile-time.
+      Argument list should be different while doing method overloading. Argument list should be same in method Overriding.
+      It is also a good practice to annotate overridden methods with `@Override` to make the compiler be able to notify you if child is, indeed, overriding parent's class method during compile-time.
 
 * **What are the access modifiers you know? What does each one do?** <br>
-   - There are four access modifiers in Java language (from strictest to the most lenient):
+    - There are four access modifiers in Java language (from strictest to the most lenient):
         1. `private` *variables*, *methods*, *constructors* or *inner classes* are only visible to its' containing class and its' methods. This modifier is most commonly used, for example, to allow variable access only through getters and setters or to hide underlying implementation of classes that should not be used by user and therefore maintain encapsulation. Singleton constructor is also marked `private` to avoid unwanted instantiation from outside.
         2. `Default` (no keyword is used) this modifier can be applied to *classes*, *variables*, *constructors* and *methods* and allows access from classes and methods inside the same package.
         3. `protected` can be used on *variables*, *methods* and *constructors* therefore allowing access only to subclasses and classes that are inside the same package as protected members' class.
         4. `public` modifier is widely-used on *classes*, *variables*, *constructors* and *methods* to grant access from any class and method anywhere. It should not be used everywhere as it implies that data marked with `public` is not sensitive and can not be used to harm the program.
 
 * **Can an Interface implement another Interface?**
-  - Yes, an interface can implement another interface (and more than one), but it needs to use `extends`, rather than `implements` keyword. And while you can not remove methods from parent interface, you can add new ones freely to your sub-interface.
+    - Yes, an interface can implement another interface (and more than one), but it needs to use `extends`, rather than `implements` keyword. And while you can not remove methods from parent interface, you can add new ones freely to your sub-interface.
 
 * **What is Polymorphism? What about Inheritance?**
-  - Polymorphism in Java has two types: Compile time polymorphism (static binding) and Runtime polymorphism (dynamic binding). Method overloading is an example of static polymorphism, while method overriding is an example of dynamic polymorphism.
+    - Polymorphism in Java has two types: Compile time polymorphism (static binding) and Runtime polymorphism (dynamic binding). Method overloading is an example of static polymorphism, while method overriding is an example of dynamic polymorphism.
 
-    An important example of polymorphism is how a parent class refers to a child class object.  In fact, any object that satisfies more than one IS-A relationship is polymorphic in nature.
+      An important example of polymorphism is how a parent class refers to a child class object.  In fact, any object that satisfies more than one IS-A relationship is polymorphic in nature.
 
-    For instance, let’s consider a class `Animal` and let `Cat` be a subclass of `Animal`. So, any cat IS animal. Here, Cat satisfies the IS-A relationship for its own type as well as its super class Animal.
-  - Inheritance can be defined as the process where one class acquires the properties (methods and fields) of another. With the use of inheritance the information is made manageable in a hierarchical order.
+      For instance, let’s consider a class `Animal` and let `Cat` be a subclass of `Animal`. So, any cat IS animal. Here, Cat satisfies the IS-A relationship for its own type as well as its super class Animal.
+    - Inheritance can be defined as the process where one class acquires the properties (methods and fields) of another. With the use of inheritance the information is made manageable in a hierarchical order.
 
-    The class which inherits the properties of other is known as subclass (derived class, child class) and the class whose properties are inherited is known as superclass (base class, parent class).
+      The class which inherits the properties of other is known as subclass (derived class, child class) and the class whose properties are inherited is known as superclass (base class, parent class).
 
-    Inheritance uses the keyword `extends` to inherit the properties of a class. Following is the syntax of extends keyword.
-    ```java
-    class Super {
-       .....
-       .....
-    }
-    class Sub extends Super {
-       .....
-       .....
-    }
-    ```
+      Inheritance uses the keyword `extends` to inherit the properties of a class. Following is the syntax of extends keyword.
+      ```java
+      class Super {
+         .....
+         .....
+      }
+      class Sub extends Super {
+         .....
+         .....
+      }
+      ```
 
 * **Multiple inheritance in Classes and Interfaces in java**
 
@@ -752,35 +757,35 @@ Android Interview Questions:
 
 * **Explain Generics in Java?**
     - Generics were included in Java language to provide stronger type checks, by allowing the programmer to define, which classes can be used with other classes
-        > In a nutshell, generics enable types (classes and interfaces) to be parameters when defining classes, interfaces and methods. Much like the more familiar formal parameters used in method declarations, type parameters provide a way for you to re-use the same code with different inputs. The difference is that the inputs to formal parameters are values, while the inputs to type parameters are types. ([Official Java Documentation](https://docs.oracle.com/javase/tutorial/java/generics/why.html))
+      > In a nutshell, generics enable types (classes and interfaces) to be parameters when defining classes, interfaces and methods. Much like the more familiar formal parameters used in method declarations, type parameters provide a way for you to re-use the same code with different inputs. The difference is that the inputs to formal parameters are values, while the inputs to type parameters are types. ([Official Java Documentation](https://docs.oracle.com/javase/tutorial/java/generics/why.html))
 
     - This means that, for example, you can define:
         ```java
         List<Integer> list = new ArrayList<>();
         ```
-        And let the compiler take care of noticing, if you put some object, of type other than `Integer` into this list and warn you.
+      And let the compiler take care of noticing, if you put some object, of type other than `Integer` into this list and warn you.
     - It should be noted that standard class hierarchy *does not* apply to generic types. It means that `Integer` in `List<Integer>` is not inherited from `<Number>` - it is actually inherited directly from `<Object>`. You can still put some constraints on what classes can be passed as a parameter into a generic by using [wildcards](https://docs.oracle.com/javase/tutorial/extra/generics/wildcards.html) like `<?>`, `<? extends MyCustomClass>` or `<? super Number>`.
     - While generics are very useful, late inclusion into Java language has put some restraints on their implementation - backward compatibility required them to remain just "syntactic sugar" - they are erased ([type erasure](https://docs.oracle.com/javase/tutorial/java/generics/erasure.html)) during compile-time and replaced with `object` class.
 
 * **What is Java PriorityQueue?**
-        - In Priority Queue, each element is having some priority and all the elements are present in a queue. The operations are performed based on the priority.
+    - In Priority Queue, each element is having some priority and all the elements are present in a queue. The operations are performed based on the priority.
 
 #### Objects and Primitives
 
 * **How is `String` class implemented? Why was it made immutable?**
-  - There is no primitive variant of `String` class in Java language - all strings are just wrappers around underlying array of characters, which is declared `final`. This means that, once a `String` object is instantiated, it cannot be changed through normal tools of the language (Reflection still can mess things up horribly, because in Java no object is truly immutable). This is why `String` variables in classes are the first candidates to be used, when you want to override `hashCode()` and `equals()` of your class - you can be sure, that all their required contracts will be satisfied.
-    > Note: The String class is immutable, so that once it is created a String object cannot be changed. The String class  has a number of methods, some of which will be discussed below, that appear to modify strings. Since strings are  immutable, what these methods really do is create and return a new string that contains the result of the operation. ([Official Java Documentation](https://docs.oracle.com/javase/tutorial/java/data/strings.html))
+    - There is no primitive variant of `String` class in Java language - all strings are just wrappers around underlying array of characters, which is declared `final`. This means that, once a `String` object is instantiated, it cannot be changed through normal tools of the language (Reflection still can mess things up horribly, because in Java no object is truly immutable). This is why `String` variables in classes are the first candidates to be used, when you want to override `hashCode()` and `equals()` of your class - you can be sure, that all their required contracts will be satisfied.
+      > Note: The String class is immutable, so that once it is created a String object cannot be changed. The String class  has a number of methods, some of which will be discussed below, that appear to modify strings. Since strings are  immutable, what these methods really do is create and return a new string that contains the result of the operation. ([Official Java Documentation](https://docs.oracle.com/javase/tutorial/java/data/strings.html))
 
-    This class is also unique in a sense, that, when you create an instance like this:
-    ```java
-    String helloWorld = "Hello, World!";
-    ```
-    `"Hello, World!"` is called a *literal* and compiler creates a `String` object with its' value. So
-    ```java
-    String capital = "Hello, World!".toUpperCase();
-    ```
-    is a valid statement, that, firstly, will create an object with literal value "Hello, World!" and then will create and return another object with value "HELLO, WORLD!"
-  - `String` was made immutable to prevent malicious manipulation of data, when, for example, user login or other sensitive data is being send to a server.
+      This class is also unique in a sense, that, when you create an instance like this:
+      ```java
+      String helloWorld = "Hello, World!";
+      ```
+      `"Hello, World!"` is called a *literal* and compiler creates a `String` object with its' value. So
+      ```java
+        String capital = "Hello, World!".toUpperCase();
+      ```
+      is a valid statement, that, firstly, will create an object with literal value "Hello, World!" and then will create and return another object with value "HELLO, WORLD!"
+    - `String` was made immutable to prevent malicious manipulation of data, when, for example, user login or other sensitive data is being send to a server.
 
 * **What does it means to say that a `String` is immutable?**
     - It means that once created, `String` object's `char[]` (its' containing value) is declared `final` and, therefore, it can not be changed during runtime.
@@ -800,10 +805,10 @@ Android Interview Questions:
     - `boolean`
 
 * **What is the difference between an Integer and int?**
-  - `int` is a primitive data type (with `boolean`, `byte`, `char`, `short`, `long`, `float` and `double`), while `Integer` (with `Boolean`, `Byte`, `Character`, `Short`,`Long`, `Float` and `Double`) is a [wrapper](https://docs.oracle.com/javase/tutorial/java/data/numberclasses.html) class that encapsulates primitive data type, while providing useful methods to perform different tasks with it.
+    - `int` is a primitive data type (with `boolean`, `byte`, `char`, `short`, `long`, `float` and `double`), while `Integer` (with `Boolean`, `Byte`, `Character`, `Short`,`Long`, `Float` and `Double`) is a [wrapper](https://docs.oracle.com/javase/tutorial/java/data/numberclasses.html) class that encapsulates primitive data type, while providing useful methods to perform different tasks with it.
 
 * **What is Autoboxing and Unboxing?**
-  - Autoboxing and Unboxing is the process of automatic wrapping (putting in a box) and unwrapping (getting the value out) of primitive data types, that have "wrapper" classes. So `int` and `Integer` can (almost always) be used interchangeably in Java language, meaning a method `void giveMeInt(int i) { ... }` can take `int` as well as `Integer` as a parameter.
+    - Autoboxing and Unboxing is the process of automatic wrapping (putting in a box) and unwrapping (getting the value out) of primitive data types, that have "wrapper" classes. So `int` and `Integer` can (almost always) be used interchangeably in Java language, meaning a method `void giveMeInt(int i) { ... }` can take `int` as well as `Integer` as a parameter.
 
 * **Typecast in Java**
     - In Java, you can use casts to polymorph one class into another, compatible one. For example:
@@ -812,7 +817,7 @@ Android Interview Questions:
             int j = (int) i;
             long k = j;
         ```
-        Here we see, that, while narrowing (`long i` -> `int j`) requires an explicit cast to make sure the programmer realizes, that there may be some data or precision loss, widening (`int j` -> `long k`) does not require an explicit cast, because there can be no data loss (`long` can take larger numbers than `int` allows).
+      Here we see, that, while narrowing (`long i` -> `int j`) requires an explicit cast to make sure the programmer realizes, that there may be some data or precision loss, widening (`int j` -> `long k`) does not require an explicit cast, because there can be no data loss (`long` can take larger numbers than `int` allows).
 
 * **Do objects get passed by reference or value in Java? Elaborate on that.**
     - In Java all primitives and objects are passed by value, meaning that their copy will be manipulated in the receiving method. But there is a caveat - when you pass an object reference into a method, a *copy of this reference* is made, so it still points to the same object. This means, that any changes that you make to the insides of this object are retained, when the method exits.
@@ -853,7 +858,7 @@ Android Interview Questions:
             }
         }
         ```
-        Will output:
+      Will output:
         ```java
             Before:
 
@@ -873,17 +878,17 @@ Android Interview Questions:
 * **What is the difference between instantiation and initialization of an object?**
 
 * **What the difference between local, instance and class variables?**
-  - Local variables exist only in methods that created them, they are stored separately in their respected Thread Stack (for more information, see question about Java Memory Model) and cannot have their reference passed outside of the method scope. That also means that they cannot be assigned any access modifier or made `static` - because they only exist during enclosing method's execution and those modifiers just do not make sense, since no other outside method can get them anyway.
-  - Instance variables are the ones, that are declared in classes and their value can be different from one instance of the class to another, but they always require that class' instance to exist.
-  - Class variables are those, that are marked with `static` keyword in their class' body. They can only have one value across all instances of that class (changing it in one place will change it in their class and, therefore, in all instances) and can even be retrieved without that class' instance (if their access modifier allows it).
+    - Local variables exist only in methods that created them, they are stored separately in their respected Thread Stack (for more information, see question about Java Memory Model) and cannot have their reference passed outside of the method scope. That also means that they cannot be assigned any access modifier or made `static` - because they only exist during enclosing method's execution and those modifiers just do not make sense, since no other outside method can get them anyway.
+    - Instance variables are the ones, that are declared in classes and their value can be different from one instance of the class to another, but they always require that class' instance to exist.
+    - Class variables are those, that are marked with `static` keyword in their class' body. They can only have one value across all instances of that class (changing it in one place will change it in their class and, therefore, in all instances) and can even be retrieved without that class' instance (if their access modifier allows it).
 
 #### Java Memory Model and Garbage Collector
 
 * **What is garbage collector? How does it work?**
-  - All objects are allocated on the heap area managed by the JVM.
-  As long as an object is being referenced, the JVM considers it alive.
-  Once an object is no longer referenced and therefore is not reachable by the application code,
-  the garbage collector removes it and reclaims the unused memory.
+    - All objects are allocated on the heap area managed by the JVM.
+      As long as an object is being referenced, the JVM considers it alive.
+      Once an object is no longer referenced and therefore is not reachable by the application code,
+      the garbage collector removes it and reclaims the unused memory.
 
 * **What is Java Memory Model? What contracts does it guarantee? How are its' Heap and Stack organized?**
 
@@ -911,8 +916,8 @@ Android Interview Questions:
 
 * **What is serialization? How do you implement it?**
     - Serialization is the process of converting an object into a stream of bytes in order to store
-    an object into memory, so that it can be recreated at a later time, while still keeping the
-    object's original state and data. In Android you may use either the Serializable, Externalizable (implements Serializable) or Parcelable interfaces.
+      an object into memory, so that it can be recreated at a later time, while still keeping the
+      object's original state and data. In Android you may use either the Serializable, Externalizable (implements Serializable) or Parcelable interfaces.
     - While Serializable is the easiest to implement, Externalizable may be used if you need to insert custom logic into the process of serialization (although it is almost never used nowadays as it is considered a relic from early versions of Java). But it is highly recommended to use Parcelable in Android instead, as Parcelable was created exclusively for Android and it performs about 10x faster than Serializable, because Serializable uses reflection, which is a slow process and tends to create a lot of temporary objects and it may cause garbage collection to occur more often.
     - To use Serializable all you have to do is implement the interface:
         ```java
@@ -1018,8 +1023,8 @@ Android Interview Questions:
                 }
             }
         ```
-        Note: For a full explanation of the <b>describeContents()</b> method see [StackOverflow](https://stackoverflow.com/questions/4076946/parcelable-where-when-is-describecontents-used/4914799#4914799).
-        In Android Studio, you can have all of the parcelable code auto generated for you, but like with everything else, it is always a good thing to try and understand everything that is happening.
+      Note: For a full explanation of the <b>describeContents()</b> method see [StackOverflow](https://stackoverflow.com/questions/4076946/parcelable-where-when-is-describecontents-used/4914799#4914799).
+      In Android Studio, you can have all of the parcelable code auto generated for you, but like with everything else, it is always a good thing to try and understand everything that is happening.
 
 * **What is `transient` modifier?**
 
@@ -1034,45 +1039,45 @@ Android Interview Questions:
 * **When would you make an object value `final`?**
 
 * **What are these `final`, `finally` and `finalize` keywords?**
-  - `final` is a keyword in the java language. It is used to apply restrictions on class, method and variable. Final class can't be inherited, final method can't be overridden and final variable value can't be changed.
-    ```java
-    class FinalExample {
-        public static void main(String[] args) {
-            final int x=100;
-            x=200;//Compile Time Error because x is final
-        }
-    }
-    ```
-  - `finally` is a code block and is used to place important code, it will be executed whether exception is handled or not.
-    ```java
-    class FinallyExample {
-        public static void main(String[] args) {
-            try {
-                int x=300;
-            }catch(Exception e) {
-                System.out.println(e.getMessage());            }
-            finally {
-                System.out.println("finally block is executed");
-            }
-        }
-    }
-    ```
-  - `Finalize` is a method used to perform clean up processing just before object is garbage collected.
-    ```java
-    class FinalizeExample {
-        public void finalize() {
-            System.out.println("finalize called");
-        }
-
-        public static void main(String[] args) {
-            FinalizeExample f1=new FinalizeExample();
-            FinalizeExample f2=new FinalizeExample();
-            f1=null;
-            f2=null;
-            System.gc();
-        }
-    }
-    ```
+    - `final` is a keyword in the java language. It is used to apply restrictions on class, method and variable. Final class can't be inherited, final method can't be overridden and final variable value can't be changed.
+      ```java
+      class FinalExample {
+          public static void main(String[] args) {
+              final int x=100;
+              x=200;//Compile Time Error because x is final
+          }
+      }
+      ```
+    - `finally` is a code block and is used to place important code, it will be executed whether exception is handled or not.
+      ```java
+      class FinallyExample {
+          public static void main(String[] args) {
+              try {
+                  int x=300;
+              }catch(Exception e) {
+                  System.out.println(e.getMessage());            }
+              finally {
+                  System.out.println("finally block is executed");
+              }
+          }
+      }
+      ```
+    - `Finalize` is a method used to perform clean up processing just before object is garbage collected.
+      ```java
+      class FinalizeExample {
+          public void finalize() {
+              System.out.println("finalize called");
+          }
+  
+          public static void main(String[] args) {
+              FinalizeExample f1=new FinalizeExample();
+              FinalizeExample f2=new FinalizeExample();
+              f1=null;
+              f2=null;
+              System.gc();
+          }
+      }
+      ```
 
 * **What is the difference between "throw" and "throws" keyword in Java?**
     - `throws` is just used to indicated which exception is to be thrown. But the `throw` keyword is used to throw some exception from any static block or any method.
