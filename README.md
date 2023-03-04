@@ -1,5 +1,5 @@
 <p align="center">
-<img alt="Android Interview Questions" src="https://github.com/youngWM/android-interview-questions-CN/blob/master/assets/banner-android-interview-questions.png">
+<img alt="" src="https://github.com/youngWM/android-interview-questions-CN/blob/master/assets/banner-android-interview-questions.png">
 </p>
  
 # 安卓面试题
@@ -21,16 +21,16 @@
 
 ### 为 `Android` 面试做准备的高质量视频 - [Amit Shekhar YouTube Channel](https://www.youtube.com/@amitshekhar)
 
-### 为 `Android` 面试做准备的高质量博客 -在这里查看 - [Check here - Blog by Amit Shekhar](https://amitshekhar.me/blog)
+### 为 `Android` 面试做准备的高质量博客  [Blog by Amit Shekhar](https://amitshekhar.me/blog)
 
 
 ### Kotlin for Android 面试须知
 
 - [掌握 kotlin 协程](https://github.com/youngWM/android-interview-questions-CN/blob/master/Kotlin%20for%20Android%20%E9%9D%A2%E8%AF%95%E9%A1%BB%E7%9F%A5/%E6%8E%8C%E6%8F%A1%20Kotlin%20%E5%8D%8F%E7%A8%8B.md) -Mastering Kotlin Coroutines
 - [精通 Kotlin 协程](https://amitshekhar.me/blog/kotlin-coroutines) -
-- [kotlin 协程中 Launch vs Async 的比较](https://amitshekhar.me/blog/launch-vs-async-in-kotlin-coroutines)-Launch vs Async in Kotlin Coroutines
+- [kotlin 协程中 Launch 与 Async 的比较](https://amitshekhar.me/blog/launch-vs-async-in-kotlin-coroutines)-Launch vs Async in Kotlin Coroutines
 - [kotlin 协程中的程序调度者 Dispatchers](https://amitshekhar.me/blog/dispatchers-in-kotlin-coroutines) -Dispatchers in Kotlin Coroutines
-- [coroutineScope vs supervisorScope](https://amitshekhar.me/blog/coroutinescope-vs-supervisorscope) - coroutineScope vs supervisorScope
+- [coroutineScope 对比 supervisorScope](https://amitshekhar.me/blog/coroutinescope-vs-supervisorscope) - coroutineScope vs supervisorScope
 - [什么是 Kotlin 中的 Flow API?](https://amitshekhar.me/blog/flow-api-in-kotlin) - 什么是 Kotlin 中的 Flow API？
 - [长时间运行的任务与 Kotlin Flow 并行](https://amitshekhar.me/blog/long-running-tasks-in-parallel-with-kotlin-flow) -Long-running tasks in parallel with Kotlin Flow 
 - [Kotlin Flow 中的重试运算符](https://amitshekhar.me/blog/retry-operator-in-kotlin-flow) -Retry Operator in Kotlin Flow 
@@ -85,13 +85,13 @@
 
 #### 基础
 
-* [为什么 Android 应用程序会滞后？](https://amitshekhar.me/blog/android-app-lag)- Why does an Android App lag?
+* 为什么 Android 应用程序会滞后？[英文资料](https://amitshekhar.me/blog/android-app-lag)- Why does an Android App lag?
 
 * **什么是`Context`？它是如何使用的？** - [Android 应用程序中的上下文](https://amitshekhar.me/blog/context-in-android-application) -What is `Context`? How is it used?
 
-* **谈谈所有的 Android 应用程序组件** - [点这里学习](https://developer.android.com/guide/components/fundamentals.html#Components)-Tell all the Android application components
+* **谈谈所有的 Android 应用程序组件** - [英文资料](https://developer.android.com/guide/components/fundamentals.html#Components)-Tell all the Android application components
 
-* **Android 应用程序的项目结构什么是？** - [点这里学习](https://developer.android.com/studio/projects) - What is the project structure of an Android Application?
+* **Android 应用程序的项目结构什么是？** - [英文资料](https://developer.android.com/studio/projects) - What is the project structure of an Android Application?
 
 * **什么是 AndroidManifest.xml？**
 
@@ -101,15 +101,15 @@
   
 #### Activity 和 Fragment 活动和片段
 
-* **为什么建议只使用默认构造函数来创建一个`Fragment`？ ** - [点这里学习](https://www.youtube.com/watch?v=CitBt0FZFIc)
+* **为什么建议只使用默认构造函数来创建一个`Fragment`？** - [英文资料](https://www.youtube.com/watch?v=CitBt0FZFIc)
 
 * **什么是`Activity`？它的生命周期？** - What is `Activity` and its lifecycle?
 
-* **`onCreate()` 和 `onStart()` 有什么区别 ** - What is the difference between `onCreate()` and `onStart()`
+* **`onCreate()` 和 `onStart()` 有什么区别** - What is the difference between `onCreate()` and `onStart()`
 
-* **当没有 `onPause()` 和 `onStop()` 的活动只调用 `onDestroy` 时？  ** - [点这里学习](https://www.youtube.com/watch?v=B2kY_ckZa-g) - When only onDestroy is called for an activity without onPause() and onStop()?
+* **当没有 `onPause()` 和 `onStop()` 的活动只调用 `onDestroy` 时？  ** - [英文资料](https://www.youtube.com/watch?v=B2kY_ckZa-g) - When only onDestroy is called for an activity without onPause() and onStop()?
 
-* **为什么我们需要在`Activity`类的`onCreate()`中调用`setContentView()`？ ** - [点这里学习](https://www.youtube.com/watch?v=U1aHAt7XC5I) - Why do we need to call setContentView() in onCreate() of Activity class?
+* **为什么我们需要在`Activity`类的`onCreate()`中调用`setContentView()`？** - [英文资料](https://www.youtube.com/watch?v=U1aHAt7XC5I) - Why do we need to call setContentView() in onCreate() of Activity class?
 
 * **`Activity`中的 `onSavedInstanceState()` 和 `onRestoreInstanceState()` 是什么？** - What is `onSavedInstanceState()` and `onRestoreInstanceState()` in activity?
     - `onSavedInstanceState()` - 此方法用于在暂停活动之前存储数据。 This method is used to store data before pausing the activity.
@@ -117,9 +117,9 @@
 
 * **什么是`Fragment` 和 它的生命周期。** What is `Fragment` and its lifecycle.
 
-* **什么是“启动模式” launchMode ？** - [点这里学习](https://amitshekhar.me/blog/singletask-launchmode-in-android) and [singleTask launchMode in Android](https://youtu.be/WYkQEnm4jeI) What are "launchMode"?
+* **什么是“启动模式” launchMode ？** - [英文资料](https://amitshekhar.me/blog/singletask-launchmode-in-android) and [singleTask launchMode in Android](https://youtu.be/WYkQEnm4jeI) What are "launchMode"?
 
-* **`Fragment`和`Activity`有什么不一样？说明两者的关系** - [点这里学习](https://stackoverflow.com/questions/10478233/why-fragments-and-when-to-use-fragments-instead-of-activities) What is the difference between a `Fragment` and an `Activity`? Explain the relationship between the two.
+* **`Fragment`和`Activity`有什么不一样？说明两者的关系** - [英文资料](https://stackoverflow.com/questions/10478233/why-fragments-and-when-to-use-fragments-instead-of-activities) What is the difference between a `Fragment` and an `Activity`? Explain the relationship between the two.
 
 * **什么时候应该使用 `Fragment` 而不是 `Activity`？** - When should you use a Fragment rather than an Activity?
     - 当您有一些 UI 组件要在各种活动中使用时。 When you have some UI components to be used across various activities
@@ -129,7 +129,7 @@
     - `FragmentPagerAdapter`: 用户访问的每个片段都会存储在内存中，但视图会被销毁。重新访问页面时，将创建视图而不是片段的实例。 Each fragment visited by the user will be stored in the memory but the view will be destroyed. When the page is revisited, then the view will be created not the instance of the fragment.
     - `FragmentStatePagerAdapter`: 这里的fragment实例在用户不可见时会被销毁，fragment的保存状态除外。 Here, the fragment instance will be destroyed when it is not visible to the user, except the saved state of the fragment.
 
-* **在 backstack 中添加/替换 fragment有什么区别？** - [点这里学习](https://stackoverflow.com/questions/24466302/basic-difference-between-add-and-replace-method-of-fragment/24466345) - What is the difference between adding/replacing fragment in backstack?
+* **在 backstack 中添加/替换 fragment有什么区别？** - [英文资料](https://stackoverflow.com/questions/24466302/basic-difference-between-add-and-replace-method-of-fragment/24466345) - What is the difference between adding/replacing fragment in backstack?
 
 * **你将如何在两个 `Fragment` 之间进行通信？** How would you communicate between two Fragments?
 
@@ -137,13 +137,13 @@
     - 默认情况下，当发生配置更改时，`Fragment` 会与其父 `Activity` 一起被销毁和重新创建。调用 `setRetainInstance(true)` 允许我们绕过这个销毁和重新创建循环，向系统发出信号以在重新创建活动时保留片段的当前实例。By default, Fragments are destroyed and recreated along with their parent Activity’s when a configuration change occurs. Calling setRetainInstance(true) allows us to bypass this destroy-and-recreate cycle, signaling the system to retain the current instance of the fragment when the activity is recreated.
 
 * **`addToBackStack()`提交fragment事务的目的是什么？** - What is the purpose of `addToBackStack()` while commiting fragment transaction?
-    - 通过调用 `addToBackStack()`，将替换事务保存到后退堆栈，这样用户可以通过按“后退”按钮来撤销事务并返回前一个片段。By calling addToBackStack(), the replace transaction is saved to the back stack so the user can reverse the transaction and bring back the previous fragment by pressing the Back button. For more [点这里学习](https://stackoverflow.com/questions/22984950/what-is-the-meaning-of-addtobackstack-with-null-parameter)
+    - 通过调用 `addToBackStack()`，将替换事务保存到后退堆栈，这样用户可以通过按“后退”按钮来撤销事务并返回前一个片段。By calling addToBackStack(), the replace transaction is saved to the back stack so the user can reverse the transaction and bring back the previous fragment by pressing the Back button. For more [英文资料](https://stackoverflow.com/questions/22984950/what-is-the-meaning-of-addtobackstack-with-null-parameter)
 
 #### Views 和 ViewGroups 视图和视图组
 
 * **Android 中`View` 是什么？** What is `View` in Android?
 
-* **`View.GONE`和`View.INVISIBLE`之间的区别？** - [点这里学习](https://stackoverflow.com/questions/11556607/android-difference-between-invisible-and-gone) Difference between `View.GONE` and `View.INVISIBLE`?
+* **`View.GONE`和`View.INVISIBLE`之间的区别？** - [英文资料](https://stackoverflow.com/questions/11556607/android-difference-between-invisible-and-gone) Difference between `View.GONE` and `View.INVISIBLE`?
 
 * **你能创建自定义自定义视图吗？如何自定义？** Can you a create custom view? How?
 
@@ -154,37 +154,37 @@
 
 * **什么是画布`Canvas`？** What is a Canvas?
 
-* **什么是`SurfaceView`？** - [点这里学习](https://developer.android.com/reference/android/view/SurfaceView)  What is a `SurfaceView`?
+* **什么是`SurfaceView`？** - [英文资料](https://developer.android.com/reference/android/view/SurfaceView)  What is a `SurfaceView`?
 
 * **相对布局与线性布局。** Relative Layout vs Linear Layout.
 
 * **讲述约束布局**  Tell about Constraint Layout
 
-* **你知道什么是视图树吗？你如何优化它的深度？** - [点这里学习](https://developer.android.com/reference/android/view/ViewTreeObserver) Do you know what is the view tree? How can you optimize its depth?
+* **你知道什么是视图树吗？你如何优化它的深度？** - [英文资料](https://developer.android.com/reference/android/view/ViewTreeObserver) Do you know what is the view tree? How can you optimize its depth?
 
 * **Touch Control 和 Events 在 Android 中如何工作？** How does the Touch Control and Events work in Android?
 
 #### Displaying Lists of Content 显示内容列表
 
-* **`ListView` 和 `RecyclerView` 和有什么不一样？** - [点这里学习](https://stackoverflow.com/questions/26728651/recyclerview-vs-listview) What is the difference between `ListView` and `RecyclerView`?
+* **`ListView` 和 `RecyclerView` 和有什么不一样？** - [英文资料](https://stackoverflow.com/questions/26728651/recyclerview-vs-listview) What is the difference between `ListView` and `RecyclerView`?
 
 * **`RecyclerView` 内部是如何工作的？** How does RecyclerView work internally?
 
-* **什么是`ViewHolder模式`？我们为什么要使用它？** - [点这里学习](https://stackoverflow.com/questions/21501316/what-is-the-benefit-of-viewholder-pattern-in-android)  What is the ViewHolder pattern? Why should we use it?
+* **什么是`ViewHolder模式`？我们为什么要使用它？** - [英文资料](https://stackoverflow.com/questions/21501316/what-is-the-benefit-of-viewholder-pattern-in-android)  What is the ViewHolder pattern? Why should we use it?
 
-* **RecyclerView优化-滚动性能提升** - [点这里学习](https://amitshekhar.me/blog/recyclerview-optimization)RecyclerView Optimization - Scrolling Performance Improvement
+* **RecyclerView优化-滚动性能提升** - [英文资料](https://amitshekhar.me/blog/recyclerview-optimization)RecyclerView Optimization - Scrolling Performance Improvement
 
-* **`RecyclerView`优化嵌套** - [点这里学习](https://amitshekhar.me/blog/setrecycledviewpool-for-optimizing-nested-recyclerview) Optimizing Nested RecyclerView
+* **`RecyclerView`优化嵌套** - [英文资料](https://amitshekhar.me/blog/setrecycledviewpool-for-optimizing-nested-recyclerview) Optimizing Nested RecyclerView
 
 * **什么是`SnapHelper`？** - [SnapHelper](https://amitshekhar.me/blog/snaphelper)SnapHelper What is `SnapHelper`?
 
 #### Dialogs and Toasts 对话和吐司
 
-* **Android中的 `Dialog`有什么？** - [点这里学习](https://developer.android.com/guide/topics/ui/dialogs)What is `Dialog` in Android?
+* **Android中的 `Dialog`有什么？** - [英文资料](https://developer.android.com/guide/topics/ui/dialogs)What is `Dialog` in Android?
 
-* **Android中的 `Toast` 有什么？** - [点这里学习](https://developer.android.com/guide/topics/ui/notifiers/toasts)  What is `Toast` in Android?
+* **Android中的 `Toast` 有什么？** - [英文资料](https://developer.android.com/guide/topics/ui/notifiers/toasts)  What is `Toast` in Android?
 
-* **`Dialog`和`Dialog Fragment`之间有什么区别？** - [点这里学习](https://stackoverflow.com/questions/7977392/android-dialogfragment-vs-dialog)  What the difference between `Dialog` and `Dialog Fragment`?
+* **`Dialog`和`Dialog Fragment`之间有什么区别？** - [英文资料](https://stackoverflow.com/questions/7977392/android-dialogfragment-vs-dialog)  What the difference between `Dialog` and `Dialog Fragment`?
 
 #### Intents and Broadcasting 意图和广播
 
@@ -194,60 +194,60 @@
 
 * **什么是显式`Intent`？** What is an Explicit `Intent`?
 
-* **什么是`BroadcastReceiver`？** - [点这里学习](https://developer.android.com/guide/components/broadcasts)  What is a `BroadcastReceiver`?
+* **什么是`BroadcastReceiver`？** - [英文资料](https://developer.android.com/guide/components/broadcasts)  What is a `BroadcastReceiver`?
 
 * **什么是`LocalBroadcastManager`？** What is a `LocalBroadcastManager`?
 
-* **`IntentFilter`的功能是什么？** - [点这里学习](https://developer.android.com/reference/android/content/IntentFilter)  What is the function of an `IntentFilter`?
+* **`IntentFilter`的功能是什么？** - [英文资料](https://developer.android.com/reference/android/content/IntentFilter)  What is the function of an `IntentFilter`?
 
 * **什么是粘性`Intent`？** What is a Sticky `Intent`?
     - 粘性 `Intents` 允许函数和服务之间的通信。`sendStickyBroadcast()` 执行称为粘性的 `sendBroadcast(Intent)`，即您发送的 Intent 在广播完成后仍然存在，以便其他人可以通过 registerReceiver(BroadcastReceiver, IntentFilter) 的返回值快速检索该数据。例如，如果您使用 ACTION_BATTERY_CHANGED 的意图来获取电池更换事件：当您为该操作调用 registerReceiver() 时——即使使用 null BroadcastReceiver——您将获得该操作的最后一次广播的 Intent。因此，您可以使用它来查找电池的状态，而不必注册电池中所有未来的状态变化。
 
   Sticky Intents allows communication between a function and a service. sendStickyBroadcast() performs a sendBroadcast(Intent) known as sticky, i.e. the Intent you are sending stays around after the broadcast is complete, so that others can quickly retrieve that data through the return value of registerReceiver(BroadcastReceiver, IntentFilter). For example, if you take an intent for ACTION_BATTERY_CHANGED to get battery change events: When you call registerReceiver() for that action — even with a null BroadcastReceiver — you get the Intent that was last Broadcast for that action. Hence, you can use this to find the state of the battery without necessarily registering for all future state changes in the battery.
     
-* **描述广播broadcasts和意图intents如何工作，以便能够在您的应用程序周围传递消息？** - [点这里学习](https://stackoverflow.com/questions/7276537/using-a-broadcast-intent-broadcast-receiver-to-send-messages-from-a-service-to-a) Describe how broadcasts and intents work to be able to pass messages around your app?
+* **描述广播broadcasts和意图intents如何工作，以便能够在您的应用程序周围传递消息？** - [英文资料](https://stackoverflow.com/questions/7276537/using-a-broadcast-intent-broadcast-receiver-to-send-messages-from-a-service-to-a) Describe how broadcasts and intents work to be able to pass messages around your app?
 
 * **什么是`PendingIntent`？** What is a `PendingIntent`?
     - 如果你希望某人在未来某个时间点代表你执行任何 Intent 操作，那么我们将使用 Pending Intent。If you want someone to perform any Intent operation at future point of time on behalf of you, then we will use Pending Intent.
   
 
-* **有哪些不同类型的广播Broadcasts？** - [点这里学习](https://developer.android.com/guide/components/broadcasts) What are the different types of Broadcasts?
+* **有哪些不同类型的广播Broadcasts？** - [英文资料](https://developer.android.com/guide/components/broadcasts) What are the different types of Broadcasts?
 
 #### Services服务
 
-* **什么是`Service`？** - [点这里学习](https://developer.android.com/guide/components/services) What is `Service`?
+* **什么是`Service`？** - [英文资料](https://developer.android.com/guide/components/services) What is `Service`?
 
 * **`Service`对比`IntentService`** `Service` vs `IntentService`.
 
-* **什么是`JobScheduler`？** - [点这里学习](https://developer.android.com/reference/android/app/job/JobScheduler)   What is a `JobScheduler`?
+* **什么是`JobScheduler`？** - [英文资料](https://developer.android.com/reference/android/app/job/JobScheduler)   What is a `JobScheduler`?
 
 #### Inter-process Communication 进程间通信
 
-* **两个截然不同的 Android 应用程序如何交互？** - [点这里学习](https://developer.android.com/training/basics/intents)   How can two distinct Android apps interact?
+* **两个截然不同的 Android 应用程序如何交互？** - [英文资料](https://developer.android.com/training/basics/intents)   How can two distinct Android apps interact?
 
-* **是否可以在多个进程中运行 Android 应用程序？如何？ ** - [点这里学习](https://stackoverflow.com/questions/6567768/how-can-an-android-application-have-more-than-one-process)  Is it possible to run an Android app in multiple processes? How?
+* **是否可以在多个进程中运行 Android 应用程序？如何？** - [英文资料](https://stackoverflow.com/questions/6567768/how-can-an-android-application-have-more-than-one-process)  Is it possible to run an Android app in multiple processes? How?
 
-* **什么是 AIDL？列举通过 AIDL 创建有界服务的步骤。 ** - [点这里学习](https://developer.android.com/guide/components/aidl) What is AIDL? Enumerate the steps in creating a bounded service through AIDL.
+* **什么是 AIDL？列举通过 AIDL 创建有界服务的步骤** - [英文资料](https://developer.android.com/guide/components/aidl) What is AIDL? Enumerate the steps in creating a bounded service through AIDL.
 
-* **您可以在 Android 中使用什么进行后台处理？** - [点这里学习](https://developer.android.com/guide/background)  What can you use for background processing in Android?
+* **您可以在 Android 中使用什么进行后台处理？** - [英文资料](https://developer.android.com/guide/background)  What can you use for background processing in Android?
 
-* **什么是`ContentProvider`，它通常用于什么？** - [点这里学习](https://developer.android.com/guide/topics/providers/content-provider-basics) and [here](https://developer.android.com/guide/topics/providers/content-providers) What is a `ContentProvider` and what is it typically used for?
+* **什么是`ContentProvider`，它通常用于什么？** - [英文资料](https://developer.android.com/guide/topics/providers/content-provider-basics) and [here](https://developer.android.com/guide/topics/providers/content-providers) What is a `ContentProvider` and what is it typically used for?
 
 #### Long-running Operations 长时间运行的操作
 
 * **如何在 Java 或 Android 中并行运行任务，并在全部完成时获得回调？-与 Kotlin Flow 并行的长时间运行的任务** - [Long-running tasks in parallel with Kotlin Flow](https://amitshekhar.me/blog/long-running-tasks-in-parallel-with-kotlin-flow) How to run parallel tasks in Java or Android, and get callback when all complete?
 
-* **为什么要避免在主线程上运行非 ui 代码？** - [点这里学习](https://developer.android.com/training/multiple-threads/communicate-ui)  Why should you avoid to run non-ui code on the main thread?
+* **为什么要避免在主线程上运行非 ui 代码？** - [英文资料](https://developer.android.com/training/multiple-threads/communicate-ui)  Why should you avoid to run non-ui code on the main thread?
 
-* **什么是 ANR？如何预防 ANR？** - [点这里学习](https://developer.android.com/topic/performance/vitals/anr.html)  What is ANR? How can the ANR be prevented?
+* **什么是 ANR？如何预防 ANR？** - [英文资料](https://developer.android.com/topic/performance/vitals/anr.html)  What is ANR? How can the ANR be prevented?
 
 * **什么是`AsyncTask`（在 API 级别 30 中弃用）？** What is an `AsyncTask`(Deprecated in API level 30) ?
 
 * **`AsyncTask` 有什么问题？** What are the problems in AsyncTask?
 
-* **您什么时候会使用 java 线程而不是 AsyncTask？** - [点这里学习](https://stackoverflow.com/questions/18480206/asynctask-vs-thread-in-android)  When would you use java thread instead of an AsyncTask?
+* **您什么时候会使用 java 线程而不是 AsyncTask？** - [英文资料](https://stackoverflow.com/questions/18480206/asynctask-vs-thread-in-android)  When would you use java thread instead of an AsyncTask?
 
-* **什么是`Loader`？（已弃用）** - [点这里学习](https://developer.android.com/guide/components/loaders)  What is a `Loader`? (Deprecated)
+* **什么是`Loader`？（已弃用）** - [英文资料](https://developer.android.com/guide/components/loaders)  What is a `Loader`? (Deprecated)
 
 * **`AsyncTask`和`Activity`的生命周期有什么关系？这会导致什么问题？如何避免这些问题？** What is the relationship between the life cycle of an `AsyncTask` and an `Activity`? What problems can this result in? How can these problems be avoided?
     - `AsyncTask` 与包含它的 `Activity` 的生命周期无关。因此，例如，如果您在 Activity 中启动 AsyncTask 并且用户旋转设备，则 Activity 将被销毁（并且将创建一个新的 Activity 实例）但 AsyncTask 不会死亡，而是继续存在直到它完成。
@@ -255,7 +255,6 @@
 
     - 然后，当 `AsyncTask` 确实完成时，它不会更新新 `Activity` 的 UI，而是更新 `Activity` 的前一个实例（即创建它但不再显示的实例！）。这可能会导致异常（类型为 java.lang.IllegalArgumentException：如果您使用 findViewById 来检索 Activity 内的视图，则视图未附加到窗口管理器）。
       Then, when the AsyncTask does complete, rather than updating the UI of the new Activity, it updates the former instance of the Activity (i.e., the one in which it was created but that is not displayed anymore!). This can lead to an Exception (of the type java.lang.IllegalArgumentException: View not attached to window manager if you use, for instance, findViewById to retrieve a view inside the Activity).
-    - 
 
     - 这也有可能导致内存泄漏，因为 AsyncTask 维护对 Activity 的引用，只要 AsyncTask 保持活动状态，就会阻止 Activity 被垃圾回收。。
       There’s also the potential for this to result in a memory leak since the AsyncTask maintains a reference to the Activity, which prevents the Activity from being garbage collected as long as the AsyncTask remains alive.
@@ -271,13 +270,13 @@
 
 #### Working With Multimedia Content 处理多媒体内容
 
-* **你如何处理 Android 中的位图，因为它占用太多内存？** - [点这里学习](https://developer.android.com/topic/performance/graphics/load-bitmap) and [here](https://developer.android.com/topic/performance/graphics/manage-memory) How do you handle bitmaps in Android as it takes too much memory?
+* **你如何处理 Android 中的位图，因为它占用太多内存？** - [英文资料](https://developer.android.com/topic/performance/graphics/load-bitmap) and [here](https://developer.android.com/topic/performance/graphics/manage-memory) How do you handle bitmaps in Android as it takes too much memory?
 
 * **Bitmap常规图像和九补丁图像有什么区别？** What is the difference between a regular `Bitmap` and a nine-patch image?
     -通常，九补丁图像允许调整大小，可用作目标设备的背景或其他图像大小要求。九补丁指的是可以调整图像大小的方式：4 个角未缩放，4 个边缘在 1 个轴上缩放，中间一个可以缩放到两个轴。 In general, a Nine-patch image allows resizing that can be used as background or other image size requirements for the target device. The Nine-patch refers to the way you can resize the image: 4 corners that are unscaled, 4 edges that are scaled in 1 axis, and the middle one that can be scaled into both axes.
   
 
-* **说说`Bitmap`池** - [点这里学习](https://amitshekhar.me/blog/bitmap-pool) Tell about the `Bitmap` pool.
+* **说说`Bitmap`池** - [英文资料](https://amitshekhar.me/blog/bitmap-pool) Tell about the `Bitmap` pool.
 
 * **图像压缩是如何进行的？** How image compression is preformed?
 
@@ -287,7 +286,7 @@
 
 * **什么是 ORM？它是如何工作的？** What is ORM? How does it work?
 
-* **你将如何`Activity`在屏幕旋转期间保持状态？** - [点这里学习](https://stackoverflow.com/questions/3915952/how-to-save-state-during-orientation-change-in-android-if-the-state-is-made-of-m) How would you preserve `Activity` state during a screen rotation?
+* **你将如何`Activity`在屏幕旋转期间保持状态？** - [英文资料](https://stackoverflow.com/questions/3915952/how-to-save-state-during-orientation-change-in-android-if-the-state-is-made-of-m) How would you preserve `Activity` state during a screen rotation?
 
 * **在 Android 应用程序中存储数据有哪些不同的方式？** What are different ways to store data in your Android app?
 
@@ -316,7 +315,7 @@
 
 #### Memory Optimizations 内存优化
 
-* **方法什么是`onTrimMemory()`？ ** - [点这里学习](https://developer.android.com/topic/performance/memory) What is the `onTrimMemory()` method?
+* **方法什么是`onTrimMemory()`？** - [英文资料](https://developer.android.com/topic/performance/memory) What is the `onTrimMemory()` method?
 
 * **OutOfMemory 是如何发生的？** How does the OutOfMemory happens?
 
@@ -326,13 +325,13 @@
 
 * **如何减少Android应用程序中的电池使用量？** How to reduce battery usage in an android application?
 
-* **什么是Doze瞌睡？应用待机怎么样？** - [点这里学习](https://developer.android.com/training/monitoring-device-state/doze-standby)  What is Doze? What about App Standby?
+* **什么是Doze瞌睡？应用待机怎么样？** - [英文资料](https://developer.android.com/training/monitoring-device-state/doze-standby)  What is Doze? What about App Standby?
 
-* **什么是`overdraw`？** - [点这里学习](https://developer.android.com/topic/performance/rendering/overdraw.html)  What is `overdraw`?
+* **什么是`overdraw`？** - [英文资料](https://developer.android.com/topic/performance/rendering/overdraw.html)  What is `overdraw`?
 
 #### Supporting Different Screen Sizes 支持不同的屏幕尺寸
 
-* **您如何支持不同类型的决议？** - [点这里学习](https://developer.android.com/training/multiscreen/screensizes)  How do you support different types of resolutions?
+* **您如何支持不同类型的决议？** - [英文资料](https://developer.android.com/training/multiscreen/screensizes)  How do you support different types of resolutions?
 
 #### Permissions 权限
 
@@ -340,7 +339,7 @@
 
 #### Native Programming 本机编程
 
-* **什么是 NDK，它为什么有用？** - 点这里学习: [Android NDK and RenderScript](https://amitshekhar.me/blog/ndk-and-renderscript)  What is the NDK and why is it useful?
+* **什么是 NDK，它为什么有用？** - 英文资料: [Android NDK and RenderScript](https://amitshekhar.me/blog/ndk-and-renderscript)  What is the NDK and why is it useful?
 
 * **什么是渲染脚本？**[Android NDK and RenderScript](https://amitshekhar.me/blog/ndk-and-renderscript)  What is renderscript?
 
@@ -352,7 +351,7 @@
 
 * **Dalvik 和 ART 有什么区别** - [Difference between Dalvik and ART](https://amitshekhar.me/blog/dalvik-art-jit-aot) What are the differences between Dalvik and ART?
 
-* **什么是DEX** - [点这里学习](https://developer.android.com/reference/dalvik/system/DexFile)  What is DEX?
+* **什么是DEX** - [英文资料](https://developer.android.com/reference/dalvik/system/DexFile)  What is DEX?
 
 * **你能手动调用垃圾收集器吗？** - [是否可以在 Android 中强制垃圾收集？](https://www.youtube.com/watch?v=fPEjpFKo1-Q) Can you manually call the Garbage collector?
 
@@ -378,17 +377,17 @@
 
 #### Others 其他的
 
-* **为什么要使用`Bundle`类来传递数据，为什么我们不能使用简单的Map数据结构？** - [点这里学习](https://developer.android.com/guide/components/activities/parcelables-and-bundles) Why Bundle class is used for data passing and why cannot we use simple Map data structure?
+* **为什么要使用`Bundle`类来传递数据，为什么我们不能使用简单的Map数据结构？** - [英文资料](https://developer.android.com/guide/components/activities/parcelables-and-bundles) Why Bundle class is used for data passing and why cannot we use simple Map data structure?
 
-* **您如何对崩溃的应用程序进行故障排除？** - [点这里学习](https://developer.android.com/topic/performance/vitals/crash)  How do you troubleshoot a crashing application?
+* **您如何对崩溃的应用程序进行故障排除？** - [英文资料](https://developer.android.com/topic/performance/vitals/crash)  How do you troubleshoot a crashing application?
 
 * **解释Android通知系统？** Explain Android notification system?
 
 * **Serializable 和 Parcelable 有什么区别？哪个是 Android 中最好的方法？** What is the difference between Serializable and Parcelable? Which is the best approach in Android?
 
-* **什么是AAPT？** - [点这里学习](https://developer.android.com/studio/command-line/aapt2)  What is AAPT?
+* **什么是AAPT？** - [英文资料](https://developer.android.com/studio/command-line/aapt2)  What is AAPT?
 
-* **定期更新屏幕的最佳方法什么是？** - [点这里学习](https://stackoverflow.com/questions/5452394/best-way-to-perform-an-action-periodically-while-an-app-is-running-handler) What is the best way to update the screen periodically?
+* **定期更新屏幕的最佳方法什么是？** - [英文资料](https://stackoverflow.com/questions/5452394/best-way-to-perform-an-action-periodically-while-an-app-is-running-handler) What is the best way to update the screen periodically?
 
 * **`FlatBuffers` 与 `JSON`** FlatBuffers vs JSON.
 
@@ -410,37 +409,37 @@
 
 ### Android Libraries 安卓库
 
-Android Interview Questions 安卓面试题:
+ 安卓面试题:
 
-* **详解OkHttp拦截器——从这里学习** - [点这里学习](https://amitshekhar.me/blog/okhttp-interceptor)Explain OkHttp Interceptor
+* **详解OkHttp拦截器——从这里学习** - [英文资料](https://amitshekhar.me/blog/okhttp-interceptor)Explain OkHttp Interceptor
 
-* **OkHttp - HTTP 缓存** [点这里学习](https://amitshekhar.me/blog/caching-with-okhttp-interceptor-and-retrofit) OkHttp - HTTP Caching
+* **OkHttp - HTTP 缓存** [英文资料](https://amitshekhar.me/blog/caching-with-okhttp-interceptor-and-retrofit) OkHttp - HTTP Caching
 
 * **告诉我一些关于 RxJava 的事情** Tell me something about RxJava.
 
 * **你将如何处理 RxJava 中的错误？** How will you handle error in RxJava?
 
-* **`FlatMap` 与 `Map` 操作符** - [点这里学习](https://amitshekhar.me/blog/rxjava-map-vs-flatmap)  FlatMap Vs Map Operator
+* **`FlatMap` 与 `Map` 操作符** - [英文资料](https://amitshekhar.me/blog/rxjava-map-vs-flatmap)  FlatMap Vs Map Operator
 
-* **`RxJava`什么时候用`Create`、`fromCallable`运算符，什么时候用运算符？** - 点这里学习: [RxJava Create and fromCallable Operator](https://amitshekhar.me/blog/rxjava-create-and-fromcallable-operator) RxJava Create and fromCallable Operator When to use `Create` operator and when to use `fromCallable` operator of RxJava?
+* **`RxJava`什么时候用`Create`、`fromCallable`运算符，什么时候用运算符？** - [RxJava Create and fromCallable Operator](https://amitshekhar.me/blog/rxjava-create-and-fromcallable-operator) RxJava Create and fromCallable Operator When to use `Create` operator and when to use `fromCallable` operator of RxJava?
 
 * **什么时候使用 RxJava 的 `defer` 运算符？** [defer 运算符](https://amitshekhar.me/blog/rxjava-defer-operator) RxJava Defer Operator  When to use `defer` operator of RxJava?
 
-* **RxJava 中如何使用 `Timer`、`Delay` 和 `Interval` 运算符？  ** - [点这里学习](https://amitshekhar.me/blog/rxjava-interval-operator) How are Timer, Delay, and Interval operators used in RxJava?
+* **RxJava 中如何使用 `Timer`、`Delay` 和 `Interval` 运算符？  ** - [英文资料](https://amitshekhar.me/blog/rxjava-interval-operator) How are Timer, Delay, and Interval operators used in RxJava?
 
 * **如何使用 RxJava 并行进行两个网络调用？** - [RxJava Zip Operator](https://amitshekhar.me/blog/rxjava-zip-operator) How to make two network calls in parallel using RxJava?
  
-* **说出 `Concat` 和 `Merge` 的区别。** - [点这里学习](https://amitshekhar.me/blog/rxjava-concat-operator) and [here](https://amitshekhar.me/blog/rxjava-merge-operator) Tell the difference between Concat and Merge.
+* **说出 `Concat` 和 `Merge` 的区别。** - [英文资料](https://amitshekhar.me/blog/rxjava-concat-operator) and [here](https://amitshekhar.me/blog/rxjava-merge-operator) Tell the difference between Concat and Merge.
 
-* **在 `RxJava` 中解释主题？** - [点这里学习](https://amitshekhar.me/blog/rxjava-subject-publish-replay-behavior-async)  Explain Subject in RxJava?
+* **在 `RxJava` 中解释主题？** - [英文资料](https://amitshekhar.me/blog/rxjava-subject-publish-replay-behavior-async)  Explain Subject in RxJava?
 
 * **`RxJava` 中的 `Observable` 有哪些类型？** [Types Of Observables In RxJava](https://amitshekhar.me/blog/types-of-observables-in-rxjava)Types Observables In RxJava What are the types of Observables in RxJava?
 
-* **如何在您的应用程序中使用 RxJava 实现搜索功能？** - 点这里学习: [使用 RxJava 运算符进行即时搜索](https://amitshekhar.me/blog/instant-search-using-rxjava-operators)How to implement search feature using RxJava in your application?
+* **如何在您的应用程序中使用 RxJava 实现搜索功能？** - 英文资料: [使用 RxJava 运算符进行即时搜索](https://amitshekhar.me/blog/instant-search-using-rxjava-operators)How to implement search feature using RxJava in your application?
 
-* **使用 RxJava 运算符在 RecyclerView 中分页** - [点这里学习](https://amitshekhar.me/blog/pagination-in-recyclerview-using-rxjava-operators) Pagination In RecyclerView Using RxJava Operators
+* **使用 RxJava 运算符在 RecyclerView 中分页** - [英文资料](https://amitshekhar.me/blog/pagination-in-recyclerview-using-rxjava-operators) Pagination In RecyclerView Using RxJava Operators
 
-* **Android 图片加载库 `Glide` 和 `Fresco` 是如何工作的？ ** - [点这里学习](https://amitshekhar.me/blog/android-image-loading-library-optimize-memory-usage), [点这里学习](https://amitshekhar.me/blog/android-image-loading-library-use-bitmap-pool-for-responsive-ui) and [点这里学习](https://amitshekhar.me/blog/android-image-loading-library-solve-the-slow-loading-issue) How The Android Image Loading Library Glide and Fresco Works?
+* **Android 图片加载库 `Glide` 和 `Fresco` 是如何工作的？** - [英文资料](https://amitshekhar.me/blog/android-image-loading-library-optimize-memory-usage), [英文资料](https://amitshekhar.me/blog/android-image-loading-library-use-bitmap-pool-for-responsive-ui) and [英文资料](https://amitshekhar.me/blog/android-image-loading-library-solve-the-slow-loading-issue) How The Android Image Loading Library Glide and Fresco Works?
 
 * **RxJava 中 `Schedulers.io()` 和 `Schedulers.computation()` 的区别。** Difference between Schedulers.io() and Schedulers.computation() in RxJava.
 
@@ -454,11 +453,11 @@ Android Interview Questions 安卓面试题:
 
 * **自定义范围在 `Dagger` 中如何工作？** How does the custom scope work in Dagger?
 
-* **什么时候在 `RxJava` 的 `CompositeDisposable` 上调用 `dispose` 和 `clear`？** - [点这里学习](https://amitshekhar.me/blog/dispose-vs-clear-compositedisposable-rxjava) When to call dispose and clear on CompositeDisposable in RxJava?
+* **什么时候在 `RxJava` 的 `CompositeDisposable` 上调用 `dispose` 和 `clear`？** - [英文资料](https://amitshekhar.me/blog/dispose-vs-clear-compositedisposable-rxjava) When to call dispose and clear on CompositeDisposable in RxJava?
 
 * **什么是网络中的多部分请求？**  What is Multipart Request in Networking?
 
-* **Kotlin 中的 `Flow` 什么是？** - [点这里学习](https://amitshekhar.me/blog/flow-api-in-kotlin)   What is Flow in Kotlin?
+* **Kotlin 中的 `Flow` 什么是？** - [英文资料](https://amitshekhar.me/blog/flow-api-in-kotlin)   What is Flow in Kotlin?
 
 ### Android Architecture 安卓架构
 
@@ -474,7 +473,7 @@ Android Interview Questions 安卓面试题:
 
 * **什么是主持人presenter？** What is presenter?
 
-* **什么是模型？ ** What is model?
+* **什么是模型？** What is model?
 
 * **描述 `MVC`** Describe MVC.
 
@@ -490,7 +489,7 @@ Android Interview Questions 安卓面试题:
 
 安卓面试题：
 
-* **设计优步应用程序** - [点这里学习](https://github.com/amitshekhariitbhu/ridesharing-uber-lyft-app)   Design Uber App.
+* **设计优步应用程序** - [英文资料](https://github.com/amitshekhariitbhu/ridesharing-uber-lyft-app)   Design Uber App.
 
 * **设计 Facebook 应用程序** Design Facebook App.
 
@@ -506,35 +505,35 @@ Android Interview Questions 安卓面试题:
 
 * **设计 LRU 缓存** Design LRU Cache.
 
-* **设计文件下载器** - [点这里学习](https://github.com/amitshekhariitbhu/PRDownloader) Design File Downloader
+* **设计文件下载器** - [英文资料](https://github.com/amitshekhariitbhu/PRDownloader) Design File Downloader
 
-* **设计图像加载库** - [点这里学习](https://amitshekhar.me/blog/android-image-loading-library-optimize-memory-usage), [here](https://amitshekhar.me/blog/android-image-loading-library-use-bitmap-pool-for-responsive-ui) and [here](https://amitshekhar.me/blog/android-image-loading-library-solve-the-slow-loading-issue) Design an Image Loading Library
+* **设计图像加载库** - [英文资料](https://amitshekhar.me/blog/android-image-loading-library-optimize-memory-usage), [here](https://amitshekhar.me/blog/android-image-loading-library-use-bitmap-pool-for-responsive-ui) and [here](https://amitshekhar.me/blog/android-image-loading-library-solve-the-slow-loading-issue) Design an Image Loading Library
 
 * **HTTP 请求与 HTTP 长轮询与 WebSockets** - [Learn from blog](https://amitshekhar.me/blog/http-request-long-polling-websocket-sse) and [Video - HTTP 请求与 HTTP 长轮询与 WebSocket 与服务器发送事件](https://www.youtube.com/watch?v=8ksWRX4xV-s) HTTP Request vs HTTP Long-Polling vs WebSockets
 
-* **语音和视频通话如何工作？** - [点这里学习](https://amitshekhar.me/blog/voice-and-video-call) How do Voice And Video Call Work?
+* **语音和视频通话如何工作？** - [英文资料](https://amitshekhar.me/blog/voice-and-video-call) How do Voice And Video Call Work?
 
 ### Android Unit Testing 安卓单元测试
 
-Android Interview Questions 安卓面试题：
+ 安卓面试题：
 
-* **什么是浓缩咖啡`Espresso`？** - [点这里学习](https://developer.android.com/training/testing/ui-testing/espresso-testing.html)   What is Espresso?
+* **什么是浓缩咖啡`Espresso`？** - [英文资料](https://developer.android.com/training/testing/ui-testing/espresso-testing.html)   What is Espresso?
 
-* **什么是 `Robolectric`？** - [点这里学习](http://robolectric.org/)  What is Robolectric?
+* **什么是 `Robolectric`？** - [英文资料](http://robolectric.org/)  What is Robolectric?
 
-* **使用 `Robolectric` 有哪些缺点？** - [点这里学习](https://stackoverflow.com/questions/18271474/robolectric-vs-android-test-framework)  What are the disadvantages of using Robolectric?
+* **使用 `Robolectric` 有哪些缺点？** - [英文资料](https://stackoverflow.com/questions/18271474/robolectric-vs-android-test-framework)  What are the disadvantages of using Robolectric?
 
-* **什么是 UI-Automator？** - [点这里学习](https://developer.android.com/training/testing/ui-testing/uiautomator-testing.html)  What is UI-Automator?
+* **什么是 UI-Automator？** - [英文资料](https://developer.android.com/training/testing/ui-testing/uiautomator-testing.html)  What is UI-Automator?
 
-* **解释单元测试** - [点这里学习](https://developer.android.com/training/testing/unit-testing/local-unit-tests)   Explain unit test.
+* **解释单元测试** - [英文资料](https://developer.android.com/training/testing/unit-testing/local-unit-tests)   Explain unit test.
 
-* **解释仪器化测试** - [点这里学习](https://developer.android.com/training/testing/unit-testing/instrumented-unit-tests)  Explain instrumented test.
+* **解释仪器化测试** - [英文资料](https://developer.android.com/training/testing/unit-testing/instrumented-unit-tests)  Explain instrumented test.
 
 * **你做过单元测试或自动测试吗？** Have you done unit testing or automatic testing?
 
-* **为什么使用 Mockito？** [点这里学习](http://site.mockito.org/)   Why Mockito is used?
+* **为什么使用 Mockito？** [英文资料](http://site.mockito.org/)   Why Mockito is used?
 
-* **描述 JUnit 测试** - [点这里学习](https://en.wikipedia.org/wiki/JUnit)   Describe JUnit test.
+* **描述 JUnit 测试** - [英文资料](https://en.wikipedia.org/wiki/JUnit)   Describe JUnit test.
 
 * **描述代码覆盖率** Describe code coverage.
 
@@ -542,9 +541,9 @@ Android Interview Questions 安卓面试题：
 
 安卓面试题：
 
-* **什么是ADB？** - [点这里学习](https://developer.android.com/studio/command-line/adb)   What is ADB?
+* **什么是ADB？** - [英文资料](https://developer.android.com/studio/command-line/adb)   What is ADB?
 
-* **什么是 DDMS，您可以用它做什么？** - [点这里学习](https://developer.android.com/studio/profile/monitor)  What is DDMS and what can you do with it?
+* **什么是 DDMS，您可以用它做什么？** - [英文资料](https://developer.android.com/studio/profile/monitor)  What is DDMS and what can you do with it?
 
 * **什么是严格模式？** [StrictMode](https://amitshekhar.me/blog/strictmode-in-android-development)StrictMode What is the StrictMode?
 
@@ -554,11 +553,11 @@ Android Interview Questions 安卓面试题：
 
 * **Android 开发有用的工具** Android Development Useful Tools.
 
-* **Firebase** - [点这里学习](https://firebase.google.com/)
+* **Firebase** - [英文资料](https://firebase.google.com/)
 
 * **如何测量Android中的方法执行时间？** How to measure method execution time in Android?
 
-* **您可以访问您的 SQLite 数据库进行调试吗？** - [点这里学习](https://github.com/amitshekhariitbhu/Android-Debug-Database) Can you access your database of SQLite Database for debugging?
+* **您可以访问您的 SQLite 数据库进行调试吗？** - [英文资料](https://github.com/amitshekhariitbhu/Android-Debug-Database) Can you access your database of SQLite Database for debugging?
 
 * **使用Proguard有哪些需要注意的地方？** What are things that we need to take care while using Proguard?
 
@@ -586,7 +585,7 @@ Android Interview Questions 安卓面试题：
 
 ### Java 和 Kotlin
 
-Android Interview Questions:安卓面试题：
+安卓面试题：
 
 #### OOP面向对象
 
@@ -647,12 +646,15 @@ Android Interview Questions:安卓面试题：
   <p align="center">
   <img alt="重载和覆盖 Overloading and Overriding" src="https://github.com/youngWM/android-interview-questions-CN/blob/master/assets/overloading-vs-overriding.png">
   </p>
-    - 重载发生在编译时，而覆盖发生在运行时：重载方法调用与其定义的绑定发生在编译时，而重载方法调用与其定义的绑定发生在运行时。有关静态与动态绑定的更多信息：StackOverflow。Overloading happens at compile-time while Overriding happens at runtime: The binding of overloaded method call to its definition happens at compile-time however binding of overridden method call to its definition happens at runtime.
+  
+  - 重载发生在编译时，而覆盖发生在运行时：重载方法调用与其定义的绑定发生在编译时，而重载方法调用与其定义的绑定发生在运行时。有关静态与动态绑定的更多信息：StackOverflow。Overloading happens at compile-time while Overriding happens at runtime: The binding of overloaded method call to its definition happens at compile-time however binding of overridden method call to its definition happens at runtime.
       More info on static vs. dynamic binding: [StackOverflow](https://stackoverflow.com/questions/19017258/static-vs-dynamic-binding-in-java).
-    - 静态方法可以被重载，这意味着一个类可以有多个同名的静态方法。静态方法不能被覆盖，即使您在子类中声明了相同的静态方法，它也与父类的相同方法无关，因为被覆盖的静态方法是由引用类选择的，而不是由对象的类选择的。Static methods can be overloaded which means a class can have more than one static method of same name. Static methods cannot be overridden, even if you declare a same static method in child class it has nothing to do with the same method of parent class as overridden static methods are chosen by the reference class and not by the class of the object.
+  
+  - 静态方法可以被重载，这意味着一个类可以有多个同名的静态方法。静态方法不能被覆盖，即使您在子类中声明了相同的静态方法，它也与父类的相同方法无关，因为被覆盖的静态方法是由引用类选择的，而不是由对象的类选择的。Static methods can be overloaded which means a class can have more than one static method of same name. Static methods cannot be overridden, even if you declare a same static method in child class it has nothing to do with the same method of parent class as overridden static methods are chosen by the reference class and not by the class of the object.
 
-      所以，例如：So, for example:
-        ```java
+  所以，例如：
+
+```java
         public class Animal {
             public static void testClassMethod() {
                 System.out.println("The static method in Animal");
@@ -680,9 +682,11 @@ Android Interview Questions:安卓面试题：
                 myAnimal.testInstanceMethod();
             }
         }
-        ```
-      将输出：
-        ```java
+```
+
+将输出：
+
+```java
         The static method in Cat    // testClassMethod() is called from "Cat" reference
 
         The static method in Animal // testClassMethod() is called from "Animal" reference,
@@ -690,18 +694,18 @@ Android Interview Questions:安卓面试题：
 
         The instance method in Cat  // testInstanceMethod() is called from "Animal" reference,
                                     // but from "Cat" object underneath
-        ```
+```
 
-      最基本的区别是重载是在同一个类中完成的，而重写基类和子类是必需的。重写就是对父类继承的方法进行具体的实现。The most basic difference is that overloading is being done in the same class while for overriding base and child classes are required. Overriding is all about giving a specific implementation to the inherited method of parent class.
+- 最基本的区别是重载是在同一个类中完成的，而重写基类和子类是必需的。重写就是对父类继承的方法进行具体的实现。The most basic difference is that overloading is being done in the same class while for overriding base and child classes are required. Overriding is all about giving a specific implementation to the inherited method of parent class.
 
-      静态绑定用于重载方法，动态绑定用于覆盖/覆盖方法。性能：与覆盖相比，重载提供更好的性能。原因是重写方法的绑定是在运行时完成的。Static binding is being used for overloaded methods and dynamic binding is being used for overridden/overriding methods.
+- 静态绑定用于重载方法，动态绑定用于覆盖/覆盖方法。性能：与覆盖相比，重载提供更好的性能。原因是重写方法的绑定是在运行时完成的。Static binding is being used for overloaded methods and dynamic binding is being used for overridden/overriding methods.
       Performance: Overloading gives better performance compared to overriding. The reason is that the binding of overridden methods is being done at runtime.
 
-      private 和 final 方法可以重载，但不能被覆盖。这意味着一个类可以有多个同名的私有/最终方法，但子类不能覆盖其基类的私有/最终方法。Private and final methods can be overloaded but they cannot be overridden. It means a class can have more than one private/final methods of same name but a child class cannot override the private/final methods of their base class.
+- private 和 final 方法可以重载，但不能被覆盖。这意味着一个类可以有多个同名的私有/最终方法，但子类不能覆盖其基类的私有/最终方法。Private and final methods can be overloaded but they cannot be overridden. It means a class can have more than one private/final methods of same name but a child class cannot override the private/final methods of their base class.
 
-      在方法重载的情况下，方法的返回类型无关紧要，可以相同也可以不同。然而，在方法覆盖的情况下，覆盖方法可以有更具体的返回类型（意味着，例如，如果基方法返回 Number 类的实例，所有覆盖方法可以返回从 Number 扩展的任何类，但不是在层次结构中更高，例如，对象在这种特殊情况下）。Return type of method does not matter in case of method overloading, it can be same or different. However in case of method overriding the overriding method can have more specific return type (meaning if, for example, base method returns an instance of Number class, all overriding methods can return any class that is extended from Number, but not a class that is higher in the hierarchy, like, for example, Object is in this particular case).
+- 在方法重载的情况下，方法的返回类型无关紧要，可以相同也可以不同。然而，在方法覆盖的情况下，覆盖方法可以有更具体的返回类型（意味着，例如，如果基方法返回 Number 类的实例，所有覆盖方法可以返回从 Number 扩展的任何类，但不是在层次结构中更高，例如，对象在这种特殊情况下）。Return type of method does not matter in case of method overloading, it can be same or different. However in case of method overriding the overriding method can have more specific return type (meaning if, for example, base method returns an instance of Number class, all overriding methods can return any class that is extended from Number, but not a class that is higher in the hierarchy, like, for example, Object is in this particular case).
 
-      进行方法重载时参数列表应该不同。方法重写中的参数列表应该相同。注释重写的方法也是一个好习惯，这样@Override编译器就可以在子类确实在编译时重写父类的类方法时通知您。Argument list should be different while doing method overloading. Argument list should be same in method Overriding.
+- 进行方法重载时参数列表应该不同。方法重写中的参数列表应该相同。注释重写的方法也是一个好习惯，这样@Override编译器就可以在子类确实在编译时重写父类的类方法时通知您。Argument list should be different while doing method overloading. Argument list should be same in method Overriding.
       It is also a good practice to annotate overridden methods with `@Override` to make the compiler be able to notify you if child is, indeed, overriding parent's class method during compile-time.
 
 * **您知道哪些访问修饰符？每个做什么？** What are the access modifiers you know? What does each one do?<br>
@@ -756,11 +760,11 @@ Android Interview Questions:安卓面试题：
 
 #### Collections and Generics 集合和泛型
 
-* **数组与数组列表** - [点这里学习](https://stackoverflow.com/questions/32020000/what-is-the-difference-between-an-array-arraylist-and-a-list/32020072) Arrays Vs ArrayLists
+* **数组与数组列表** - [英文资料](https://stackoverflow.com/questions/32020000/what-is-the-difference-between-an-array-arraylist-and-a-list/32020072) Arrays Vs ArrayLists
 
-* **HashSet 与 TreeSet** - [点这里学习](https://stackoverflow.com/questions/25602382/java-hashset-vs-treeset-when-should-i-use-over-other)   HashSet Vs TreeSet
+* **HashSet 与 TreeSet** - [英文资料](https://stackoverflow.com/questions/25602382/java-hashset-vs-treeset-when-should-i-use-over-other)   HashSet Vs TreeSet
 
-* **HashMap 与 Set**[点这里学习](https://stackoverflow.com/questions/2773824/difference-between-hashset-and-hashmap)    HashMap Vs Set
+* **HashMap 与 Set**[英文资料](https://stackoverflow.com/questions/2773824/difference-between-hashset-and-hashmap)    HashMap Vs Set
 
 * **堆栈与队列** Stack Vs Queue
 
@@ -1039,11 +1043,11 @@ Android Interview Questions:安卓面试题：
 
 * **什么是匿名类？**  What are anonymous classes?
 
-* **==using和on 一个对象有什么区别.equals？**  What is the difference between using `==` and `.equals` on an object?
+* **一个对象使用`==`和`.equals`有什么区别？**  What is the difference between using `==` and `.equals` on an object?
 
-* **hashCode()和是做什么equals()用的？**  What is the `hashCode()` and `equals()` used for?
+* **`hashCode()`和`equals()`是做什么用的？**  What is the `hashCode()` and `equals()` used for?
 
-* **为什么不在构造函数中调用抽象方法？** - [点这里学习](https://stackoverflow.com/questions/15327417/is-it-ok-to-call-abstract-method-from-constructor-in-java)   Why would you not call abstract method in constructor?
+* **为什么不在构造函数中调用抽象方法？** - [英文资料](https://stackoverflow.com/questions/15327417/is-it-ok-to-call-abstract-method-from-constructor-in-java)   Why would you not call abstract method in constructor?
 
 * **你什么时候会创建一个对象值final？**  When would you make an object value `final`?
 
@@ -1105,7 +1109,7 @@ Android Interview Questions:安卓面试题：
 
 * **什么是依赖注入？** What is Dependency Injection?
 
-* **如何StringBuilder实现 a 来避免不可变字符串分配问题？** - [点这里学习](https://stackoverflow.com/questions/54023816/how-is-a-stringbuilder-implemented-to-avoid-the-immutable-string-allocation-prob)  How is a `StringBuilder` implemented to avoid the immutable string allocation problem?
+* **如何StringBuilder实现 a 来避免不可变字符串分配问题？** - [英文资料](https://stackoverflow.com/questions/54023816/how-is-a-stringbuilder-implemented-to-avoid-the-immutable-string-allocation-prob)  How is a `StringBuilder` implemented to avoid the immutable string allocation problem?
 
 * **StringBuffer和之间的区别StringBuilder？** Difference between `StringBuffer` and `StringBuilder`?
 
@@ -1116,7 +1120,7 @@ Android Interview Questions:安卓面试题：
 
 * **说说 Kotlin 的一些优点**  Tell some advantages of Kotlin.
 
-* **val和 和有什么不一样var？** - [点这里学习](https://stackoverflow.com/questions/44200075/val-and-var-in-kotlin)   What is the difference between `val` and `var`?
+* **val和 和有什么不一样var？** - [英文资料](https://stackoverflow.com/questions/44200075/val-and-var-in-kotlin)   What is the difference between `val` and `var`?
 
 * **在 Kotlin 中使用有什么优势const？** - [视频](https://www.youtube.com/watch?v=3G49ivVxfkU) and [博客](https://amitshekhar.me/blog/const-in-kotlin) What is the advantage of using `const` in Kotlin?
 
@@ -1128,13 +1132,13 @@ Android Interview Questions:安卓面试题：
 
 * **如何确保nullKotlin 的安全性？**  How to ensure `null` safety in Kotlin?
 
-* **什么时候使用lateintKotlin 中使用的关键字？**[点这里学习](https://amitshekhar.me/blog/lateinit-vs-lazy-in-kotlin)   When to use `lateint` keyword used in Kotlin?
+* **什么时候使用lateintKotlin 中使用的关键字？**[英文资料](https://amitshekhar.me/blog/lateinit-vs-lazy-in-kotlin)   When to use `lateint` keyword used in Kotlin?
 
-* **如何检查一个lateinit变量是否已经初始化？**[点这里学习](https://amitshekhar.me/blog/lateinit-vs-lazy-in-kotlin)   How to check if a `lateinit` variable has been initialized?
+* **如何检查一个lateinit变量是否已经初始化？**[英文资料](https://amitshekhar.me/blog/lateinit-vs-lazy-in-kotlin)   How to check if a `lateinit` variable has been initialized?
 
-* **如何在 Kotlin 中对变量进行延迟初始化？** - [点这里学习](https://amitshekhar.me/blog/lateinit-vs-lazy-in-kotlin)  How to do lazy initialization of variables in Kotlin?
+* **如何在 Kotlin 中对变量进行延迟初始化？** - [英文资料](https://amitshekhar.me/blog/lateinit-vs-lazy-in-kotlin)  How to do lazy initialization of variables in Kotlin?
 
-* **companion objects科特林有什么？** - [点这里学习](https://amitshekhar.me/blog/companion-object-in-kotlin)  What are `companion objects` in Kotlin?
+* **companion objects科特林有什么？** - [英文资料](https://amitshekhar.me/blog/companion-object-in-kotlin)  What are `companion objects` in Kotlin?
 
 * **Kotlin 中 == 和 ===** [Video](https://www.youtube.com/watch?v=lJtgxT2OIgQ) and [Blog](https://amitshekhar.me/blog/structural-and-referential-equality-in-kotlin) Difference between == and === in Kotlin
 
@@ -1146,7 +1150,7 @@ Android Interview Questions:安卓面试题：
 
 * **如何在 Kotlin 中创建单例类？** How to create a Singleton class in Kotlin?
 
-* **open和publicKotlin之间有什么区别？** - [点这里学习](https://amitshekhar.me/blog/open-keyword-in-kotlin)  What is the difference between `open` and `public` in Kotlin?
+* **open和publicKotlin之间有什么区别？** - [英文资料](https://amitshekhar.me/blog/open-keyword-in-kotlin)  What is the difference between `open` and `public` in Kotlin?
 
 * **let解释, run, with, also,apply在 Kotlin 中的用例。** Explain the use-case of `let`, `run`, `with`, `also`, `apply` in Kotlin.
 
@@ -1162,13 +1166,13 @@ Android Interview Questions:安卓面试题：
 
 * **switch与之间如何选择when？** How to choose between `switch` with `when`?
 
-* **Kotlin 中的协程什么是？** - [点这里学习](https://amitshekhar.me/blog/kotlin-coroutines)  What are Coroutines in Kotlin?
+* **Kotlin 中的协程什么是？** - [英文资料](https://amitshekhar.me/blog/kotlin-coroutines)  What are Coroutines in Kotlin?
 
-* **什么是协程作用域？** - [点这里学习](https://amitshekhar.me/blog/kotlin-coroutines)  What is Coroutine Scope?
+* **什么是协程作用域？** - [英文资料](https://amitshekhar.me/blog/kotlin-coroutines)  What is Coroutine Scope?
 
-* **什么是协程上下文？** - [点这里学习](https://amitshekhar.me/blog/kotlin-coroutines)  What is Coroutine Context?
+* **什么是协程上下文？** - [英文资料](https://amitshekhar.me/blog/kotlin-coroutines)  What is Coroutine Context?
 
-* **在 Kotlin 协程中启动与异步** [点这里学习](https://amitshekhar.me/blog/launch-vs-async-in-kotlin-coroutines)  Launch vs Async in Kotlin Coroutines
+* **在 Kotlin 协程中启动与异步** [英文资料](https://amitshekhar.me/blog/launch-vs-async-in-kotlin-coroutines)  Launch vs Async in Kotlin Coroutines
 
 * **Kotlin 中的内联函数什么是？** - [Video](https://www.youtube.com/watch?v=GLLI8h67ryo) and [Blog](https://amitshekhar.me/blog/inline-function-in-kotlin)What is inline function in Kotlin?
 
@@ -1180,7 +1184,7 @@ Android Interview Questions:安卓面试题：
 
 * **Kotlin 中的高阶函数什么是？**[Kotlin 中的高阶函数和 Lambda](https://amitshekhar.me/blog/higher-order-functions-and-lambdas-in-kotlin)What are higher-order functions in Kotlin?
 
-* **什么是 Kotlin 中的 Lambda** - 点这里学习: [Kotlin 中的高阶函数和 Lambda](https://amitshekhar.me/blog/higher-order-functions-and-lambdas-in-kotlin)What are Lambdas in Kotlin
+* **什么是 Kotlin 中的 Lambda** - 英文资料: [Kotlin 中的高阶函数和 Lambda](https://amitshekhar.me/blog/higher-order-functions-and-lambdas-in-kotlin)What are Lambdas in Kotlin
 
 * **讲述 Kotlin 中的集合** Tell about the Collections in Kotlin
 
@@ -1230,7 +1234,7 @@ Android 面试中 Kotlin Flow API 你应该知道的主题： Topics you should 
 
 ### Other Topics 其他话题
 
-Android Interview Questions安卓面试题：:
+安卓面试题：:
 
 * **描述 REST API 的工作原理。什么是REST？**  Describe how REST APIs work. What is REST?
 
@@ -1246,13 +1250,13 @@ Android Interview Questions安卓面试题：:
 
 * **你试过Kotlin吗？** Have you tried Kotlin?
 
-* **在 Android 应用程序开发过程中，您应该持续衡量哪些指标？** - 点这里学习: [Android 应用程序性能指标](https://amitshekhar.me/blog/android-app-performance-metrics)What are the metrics that you should measure continuously while android application development?
+* **在 Android 应用程序开发过程中，您应该持续衡量哪些指标？** - 英文资料: [Android 应用程序性能指标](https://amitshekhar.me/blog/android-app-performance-metrics)What are the metrics that you should measure continuously while android application development?
 
 * **什么是 Chrome 自定义标签页？如何在您的应用程序中显示网页内容？** What is Chrome Custom Tabs? How to display web content in your app?
 
 * **如何避免将 API 密钥签入 VCS？**  How to avoid API keys from check-in into VCS?
 
-* **Kotlin Multiplatform 如何工作？** - [点这里学习](https://amitshekhar.me/blog/how-does-the-kotlin-multiplatform-work)  How does the Kotlin Multiplatform work?
+* **Kotlin Multiplatform 如何工作？** - [英文资料](https://amitshekhar.me/blog/how-does-the-kotlin-multiplatform-work)  How does the Kotlin Multiplatform work?
 
 * **如何使用内存堆转储数据？**  How to use Memory Heap Dumps data?
 
@@ -1308,5 +1312,5 @@ Android Interview Questions安卓面试题：:
    limitations under the License.
 ```
 
-### Contributing to Android Interview Questions
+### Contributing to 
 Just make pull request. You are in!
