@@ -1,163 +1,169 @@
-在我们开始之前，我想提一下，我发布了一个视频播放列表来帮助你破解 Android 面试：查看Android 面试问题和答案。
+在我们开始之前，我想提一下，我发布了一个视频播放列表来帮助你破解 Android 面试：[查看Android 面试问题和答案](https://www-youtube-com.translate.goog/playlist?list=PL_I3TGB7aK6jNBMZkw3FYdJXyf7quHdI8&_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
 
 本文适用于对Kotlin 协程感到好奇但不知道它到底是什么的任何人。目的是让您了解什么是 Kotlin Coroutines，这意味着在编写本文时几乎没有做任何简化。如果您了解什么是 Kotlin 协程，那么我的任务就完成了。如果您完整地阅读了这篇文章，我相信我的任务将会完成。
 
-知识来到那些渴望它的人。
+>知识来到那些渴望它的人。
 
-在本教程中，我们将通过涵盖以下主题来掌握 Android 中的Kotlin 协程：
+在本教程中，我们将通过涵盖以下主题来掌握 Android 中的 **Kotlin协程**：
 
-什么是协程？
-为什么需要 Kotlin Coroutines 提供的解决方案？
-有关如何在 Android 中实现 Kotlin 协程的分步指南。
-在 Kotlin 协程中启动与异步
-Kotlin 协程中的作用域是什么？
-Kotlin 协程中的异常处理。
-通过示例学习适用于 Android 的 Kotlin 协程的项目。
+* 什么是协程？
+* 为什么需要 Kotlin Coroutines 提供的解决方案?
+* 有关如何在 Android 中实现 Kotlin 协程的分步指南。 
+* 在 Kotlin 协程中启动与异步 Kotlin 协程中的作用域是什么？
+* Kotlin 协程中的异常处理。
+* 通过 [示例](https://github.com/amitshekhariitbhu/Learn-Kotlin-Coroutines) 学习适用于 Android 的 Kotlin 协程的项目。
+
 当前可用于处理多线程的框架导致回调地狱和阻塞状态，因为我们没有任何其他简单的方法来保证线程安全执行。
 
 协程是一个非常高效和完整的框架，可以以更高效和更简单的方式管理并发。
 
 让我们以一种非常简单的方式了解协程到底是什么。
 
-什么是协程？
-协程 = Co + 例程
+### 什么是协程？
 
-在这里，Co表示合作，Routines表示功能。
+**Coroutines** = Co + Routines
 
-这意味着当函数相互协作时，我们称之为协程。
+在这里，Co 表示合作，Routines 表示功能。
+
+这意味着当函数相互协作时，我们称之为**协程**。
 
 
 协作协程
-让我们用一个例子来理解这一点。为了便于理解，我以不同的方式编写了以下代码。假设我们有两个函数functionA和functionB。
+让我们用一个例子来理解这一点。为了便于理解，我以不同的方式编写了以下代码。假设我们有两个函数 **functionA** 和 **functionB** 。
 
-functionA如下：
+**functionA** 如下：
 ```kotlin
 fun functionA(case: Int) {
-when (case) {
-1 -> {
-taskA1()
-functionB(1)
-}
-2 -> {
-taskA2()
-functionB(2)
-}
-3 -> {
-taskA3()
-functionB(3)
-}
-4 -> {
-taskA4()
-functionB(4)
-}
-}
+    when (case) {
+        1 -> {
+            taskA1()
+            functionB(1)
+        }
+        2 -> {
+            taskA2()
+            functionB(2)
+        }
+        3 -> {
+            taskA3()
+            functionB(3)
+        }
+        4 -> {
+            taskA4()
+            functionB(4)
+        }
+    }
 }
 ```
 
-如下functionB所示：
+如下 **functionB** 所示：
 ```kotlin
 fun functionB(case: Int) {
-when (case) {
-1 -> {
-taskB1()
-functionA(2)
-}
-2 -> {
-taskB2()
-functionA(3)
-}
-3 -> {
-taskB3()
-functionA(4)
-}
-4 -> {
-taskB4()
-}
-}
+    when (case) {
+        1 -> {
+            taskB1()
+            functionA(2)
+        }
+        2 -> {
+            taskB2()
+            functionA(3)
+        }
+        3 -> {
+            taskB3()
+            functionA(4)
+        }
+        4 -> {
+            taskB4()
+        }
+    }
 }
 ```
-然后，我们可以调用functionA如下：
+然后，我们可以调用 **functionA** 如下：
 ```kotlin
 functionA(1)
 ```
-在这里，functionA将做taskA1交给控制functionB执行taskB1。
+在这里，**functionA** 将做 **taskA1** 交给控制 **functionB** 执行 **taskB1** 。
 
-然后，functionB将执行taskB1并将控制权交还给functionA执行taskA2等等。
+然后， **functionB** 将执行 **taskB1** 并将控制权交还给 **functionA** 执行 **taskA2** 等等。
 
-重要的是，functionA他们functionB彼此合作。
+重要的是， **functionA** 他们 **functionB** 彼此合作。
 
-使用 Kotlin 协程，可以非常轻松地完成上述协作，而无需使用我在上面的示例中为了理解而使用的when或switch case 。
+使用 Kotlin 协程，可以非常轻松地完成上述协作，而无需使用我在上面的示例中为了理解而使用的 **when** 或 **switch case**  。
 
 现在，我们已经了解了函数之间协作时什么是协程。由于功能的协作性质，存在无限的可能性。
 
 一些可能性如下：
 
-它可以执行几行 functionA，然后执行几行 functionB，然后再执行几行 functionA，依此类推。当一个线程处于空闲状态并且什么都不做时，这将很有帮助，在这种情况下，它可以执行另一个函数的几行。这样，它就可以充分利用线程。最终合作有助于多任务处理。
+它可以执行几行  **functionA** ，然后执行几行 **functionB** ，然后再执行几行  **functionA** ，依此类推。当一个线程处于空闲状态并且什么都不做时，这将很有帮助，在这种情况下，它可以执行另一个函数的几行。这样，它就可以充分利用线程。最终合作有助于多任务处理。
+
 它将支持以同步方式编写异步代码。我们将在本文后面讨论这个。
 总的来说，协程使多任务处理变得非常容易。
 
-所以，我们可以说协程和线程都是多任务的。但不同的是，线程由操作系统管理，协程由用户管理，因为它可以利用协作执行几行功能。
+所以，我们可以说**协程和线程都是多任务**的。但不同的是，**线程由操作系统管理，协程由用户管理**，因为它可以利用协作执行几行功能。
 
-它是一个基于实际线程编写的优化框架，利用函数的协作特性使其轻巧而强大。所以，我们可以说协程是轻量级的线程。轻量级线程意味着它不映射到本机线程，因此不需要在处理器上进行上下文切换，因此它们速度更快。
+**_协程是一个基于实际线程编写的优化框架_**，利用函数的协作特性使其轻巧而强大。所以，我们可以说**协程是轻量级的线程**。轻量级线程意味着它不映射到本机线程，因此不需要在处理器上进行上下文切换，因此它们速度更快。
 
-当我说“它不映射到本机线程”时，它是什么意思？
+### 协程不映射到本机线程
+
+当我说“**协程不映射到本机线程**”时，它是什么意思？
 
 协程有多种语言版本。基本上，有两种类型的协程：
 
-无堆叠
-堆积如山
+1. Stackless 无堆叠
+2. Stackful 堆积如山
+
 Kotlin 实现无堆栈协程——这意味着协程没有自己的堆栈，因此它们不会映射到本机线程。
 
 现在，你可以理解下面这段话，Kotlin 官方网站上说的是什么
-```
-One can think of a coroutine as a light-weight thread. Like threads, coroutines can run in parallel, wait for each other and communicate. The biggest difference is that coroutines are very cheap, almost free: we can create thousands of them, and pay very little in terms of performance. True threads, on the other hand, are expensive to start and keep around. A thousand threads can be a serious challenge for a modern machine.
 
-Coroutines do not replace threads, it's more like a framework to manage them.
+**可以将协程视为一种轻量级线程。和线程一样，协程可以并行运行，相互等待和通信。最大的区别是协程非常便宜，几乎是免费的：我们可以创建成千上万个协程，并且在性能方面支付的费用很少。另一方面，真正的线程的启动和维护成本很高。一千个线程对于现代机器来说可能是一个严峻的挑战。**
 
-The exact definition of Coroutines: A framework to manage concurrency in a more performant and simple way with its lightweight thread which is written on top of the actual threading framework to get the most out of it by taking the advantage of cooperative nature of functions.
-```
+**协程并没有取代线程，它更像是一个框架来管理它们.**
+
+**Coroutines 的确切定义：一种以更高效和更简单的方式管理并发的框架，其轻量级线程编写在实际线程框架之上，通过利用函数的协作性质来充分利用它。**
+
 现在，我们已经了解了协程到底是什么。现在我们需要知道为什么需要 Kotlin Coroutines 提供的解决方案。
 
-为什么需要 Kotlin 协程？
+### 为什么需要 Kotlin 协程？
+
 让我们来看一个非常标准的 Android 应用程序用例，如下所示：
 
-从服务器获取用户。
-在 UI 中显示用户。
+* 从服务器获取用户。
+* 在 UI 中显示用户。
 ```kotlin
 fun fetchAndShowUser() {
-val user = fetchUser()
-showUser(user)
+    val user = fetchUser()
+    showUser(user)
 }
 
 fun fetchUser(): User {
-// make network call
-// return user
+    // make network call
+    // return user
 }
 
 fun showUser(user: User) {
-// show user
+    // show user
 }
 ```
 当我们调用该```fetchAndShowUser```函数时，它会抛出异常```NetworkOnMainThreadException```，因为主线程不允许进行网络调用。
 
 有很多方法可以解决这个问题。其中一些如下：
 
-使用回调：在这里，我们在后台线程中运行 fetchUser 并通过回调传递结果。
+**1.使用回调**：在这里，我们在后台线程中运行 fetchUser 并通过回调传递结果。
 ```kotlin
 fun fetchAndShowUser() {
-fetchUser { user ->
-showUser(user)
-}
+    fetchUser { user ->
+        showUser(user)
+    }
 }
 
 fun fetchUser(callback: (User) -> Unit)) {
-// make network call on background thread to get user
-// callback with user
-callback(user)
+    // make network call on background thread to get user
+    // callback with user
+    callback(user)
 }
 
 fun showUser(user: User) {
-// show user
+    // show user
 }
 ```
 让我们看另一个例子，其中我们有三个嵌套的网络调用。
@@ -175,103 +181,110 @@ fun fetchData() {
 ```
 这种类型的嵌套也称为 - “回调地狱”。
 
-使用 RxJava：反应世界的方法。这样我们就可以摆脱嵌套的回调。
+**2.使用 RxJava**：反应世界的方法。这样我们就可以摆脱嵌套的回调。
 ```kotlin
 fetchUser()
-.subscribeOn(Schedulers.io())
-.observerOn(AndroidSchedulers.mainThread())
-.subscribe { user ->
-showUser(user)
-}
+    .subscribeOn(Schedulers.io())
+    .observerOn(AndroidSchedulers.mainThread())
+    .subscribe { user ->
+        showUser(user)
+    }
 
 fun fetchUser(): Single<User> {
-// make network call
-// emit user
+    // make network call
+    // emit user
 }
 
 fun showUser(user: User) {
-// show user
+    // show user
 }
 ```
-使用协程：是的，协程。
+
+**3.使用协程**：是的，协程。
 ```kotlin
 fun fetchAndShowUser() {
-GlobalScope.launch(Dispatchers.Main) {
-val user = fetchUser() // fetch on IO thread
-showUser(user) // back on UI thread
-}
+    GlobalScope.launch(Dispatchers.Main) {
+        val user = fetchUser() // fetch on IO thread
+        showUser(user) // back on UI thread
+    }
 }
 
 suspend fun fetchUser(): User {
-return withContext(Dispatchers.IO) {
-// make network call on IO thread
-// return user
-}
+    return withContext(Dispatchers.IO) {
+        // make network call on IO thread
+        // return user
+    }
 }
 
 fun showUser(user: User) {
-// show user
+    // show user
 }
 ```
 这里，上面的代码看起来是同步的，其实是异步的。我们将看看这怎么可能。
 
-通过编写launch，我们启动协程来执行任务。
+通过编写 **launch**，我们启动协程来执行任务。
 ```kotlin
 GlobalScope.launch {
-// do something here
+    // do something here
 }
 ```
-Kotlin协程在Android中的实现
+
+### Kotlin协程在Android中的实现
+
 在 Android 项目中添加 Kotlin Coroutines 依赖，如下所示：
 ```kotlin
 dependencies {
-implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:x.x.x"
-implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:x.x.x"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:x.x.x"
+    implementation "org.jetbrainskotlinx:kotlinx-coroutines-android:x.x.x"
 }
 ```
+
 让我们看看上面例子中出现的所有函数：
 
-功能fetchAndShowUser：
+功能 **fetchAndShowUser**：
 ```kotlin
 fun fetchAndShowUser() {
-GlobalScope.launch(Dispatchers.Main) {
-val user = fetchUser() // fetch on IO thread
-showUser(user) // back on UI thread
-}
+    GlobalScope.launch(Dispatchers.Main) {
+        val user = fetchUser() // fetch on IO thread
+        showUser(user) // back on UI thread
+    }
 }
 ```
-功能fetchUser：
+
+功能 **fetchUser**：
 ```kotlin
 suspend fun fetchUser(): User {
-return withContext(Dispatchers.IO) {
-// make network call on IO thread
-// return user
-}
+    return withContext(Dispatchers.IO) {
+        // make network call on IO thread
+        // return user
+    }
 }
 ```
-和showUser功能：
+和 **showUser** 功能：
 ```kotlin
 fun showUser(user: User) {
-// show user
+    // show user
 }
 ```
-注意：我已经使用 GlobalScope 作为快速示例，我们应该不惜一切代价避免使用它。在 Android 项目中，我们应该根据我们的用例使用自定义范围，例如lifecycleScope,viewModelScope等。我们将在下面的范围部分了解它们。
+注意：我已经使用 GlobalScope 作为快速示例，我们应该不惜一切代价避免使用它。在 Android 项目中，我们应该根据我们的用例使用自定义范围，例如 **lifecycleScope** , **viewModelScope** 等。我们将在下面的范围部分了解它们。
 
-别着急，我们将在本文中逐步学习 suspend、GlobalScope、withContext 和 Dispatchers.IO。
+别着急，我们将在本文中逐步学习 **suspend**、**GlobalScope**、**withContext** 和 **Dispatchers.IO**。
 
 我们在这里介绍了两个东西如下：
 
-Dispatchers：Dispatchers 帮助协程决定工作必须在哪个线程上完成。主要有三种类型的 Dispatcher，分别是IO、Default 和 Main。IO dispatcher 用于做网络和磁盘相关的工作。默认值用于执行 CPU 密集型工作。Main是Android的UI线程。
-如果您想了解有关 Dispatchers 的更多信息：检查Kotlin Coroutines 中的 Dispatchers。
+**1.Dispatchers**：Dispatchers 帮助协程决定工作必须在哪个线程上完成。主要有三种类型的 Dispatcher，分别是**IO**、**Default** 和 **Main**。 IO dispatcher 用于做网络和磁盘相关的工作。默认值用于执行 CPU 密集型工作。
+Main是Android的UI线程。
+如果您想了解有关 Dispatchers 的更多信息：[Kotlin 协程中的调度程序 Dispatchers]()。
 
-suspend：暂停功能是可以启动、暂停和恢复的功能。
+**2.suspend**：暂停功能是可以启动、暂停和恢复的功能。
 
-挂起函数协程
-挂起函数只允许从协程或另一个挂起函数中调用。您可以看到该函数fetchUser包含关键字suspend。因此，为了使用它，我们从协程中调用了它。
+### 挂起函数协程
 
-现在，如果需要，我们如何调用Activity 的fetchUserfrom呢onCreate？
+**挂起函数只允许从协程或另一个挂起函数中调用**。您可以看到该函数 **fetchUser** 包含关键字suspend。因此，为了使用它，我们从协程中调用了它。
 
-因此，fetchUser只能从另一个挂起函数或协程调用。我们不能让onCreate活动的功能挂起，所以我们需要从协程中调用它（通过启动协程），如下所示：
+现在，如果需要，我们如何在 **Activity** 里的 **onCreate** 调用 **fetchUser** ？
+
+因为 **fetchUser** 只能从另一个挂起函数或协程调用。我们不能让  **Activity** 的**onCreate** 方法挂起，所以我们需要从协程中调用它（通过启动协程），如下所示：
 ```kotlin
 override fun onCreate(savedInstanceState: Bundle?) {
 super.onCreate(savedInstanceState)
@@ -283,9 +296,9 @@ super.onCreate(savedInstanceState)
 
 }
 ```
-fetchUser将在 IO 线程上运行，因为我们已经将Dispatchers.IO与withContext.
+**fetchUser**将在 IO 线程上运行，因为我们已经将Dispatchers.IO与withContext.
 
-showUser将在 UI 线程上运行，因为我们已经使用Dispatchers.Main启动调用它的协程。
+**showUser**将在 UI 线程上运行，因为我们已经使用Dispatchers.Main启动调用它的协程。
 
 让我们再举一个简单的例子来进一步了解它。
 ```kotlin
@@ -322,10 +335,10 @@ class MainActivity : AppCompatActivity() {
 ```
 在这里，我们有 3 个函数，其中只有一个函数是挂起函数。
 
-doSomething：非暂停功能
-doLongRunningTask：挂起函数
-doSomethingElse：非暂停功能
-在这种情况下，非挂起函数doSomething将doSomethingElse在 UI 线程上运行，因为我们已经使用Dispatchers.Main启动调用它们的协程。
+**doSomething**：非暂停功能
+**doLongRunningTask**：挂起函数
+**doSomethingElse**：非暂停功能
+在这种情况下，非挂起函数**doSomething**将**doSomethingElse**在 UI 线程上运行，因为我们已经使用Dispatchers.Main启动调用它们的协程。
 
 并且挂起函数doLongRunningTask将在默认后台线程上运行，因为我们已经将Dispatchers.Default与withContext.
 
