@@ -6,6 +6,9 @@
 
 > Android 面试问题 - 你的 Android 面试备忘单
 
+---
+
+# 序
 ### 由[Amit Shekhar](https://github.com/amitshekhariitbhu)编写和维护，他有接受许多 Android 开发人员面试和顶级公司面试的经验。
 
 ### Amit Shekhar 自我介绍
@@ -23,8 +26,35 @@
 
 ### 为 `Android` 面试做准备的高质量博客  [Blog by Amit Shekhar](https://amitshekhar.me/blog)
 
+#### **获取指导: [amitshekhar.me](https://amitshekhar.me)**
 
-### Kotlin for Android 面试须知
+<br>
+
+---
+<br>
+
+## 目录
+
+* [一.Kotlin for Android 面试须知](#一.Kotlin-for-Android-面试须知)
+* [二.Android 核心](#二.Android核心)
+* [三.Android 库](#三.Android-Libraries-安卓库)
+* [四.Android Architecture 安卓架构](#四.Android Architecture 安卓架构)
+* [五.Android 设计问题](#五.Android Design Problem 安卓设计问题)
+* [六.Android Unit Testing 安卓单元测试](#六.Android Unit Testing 安卓单元测试)
+* [七.Android Tools And Technologies 安卓工具和技术](#七.Android Tools And Technologies 安卓工具和技术)
+* [八.Java 和 Kotlin](#八.Java 和 Kotlin)
+* [九.Kotlin 协程](#九.Kotlin 协程)
+* [十.Kotlin Flow API](#十.Kotlin Flow API)
+* [十一.Jetpack Compose Jetpack](#十一.Jetpack Compose)
+* [十二.Other Topics 其他主题](#十二.Other Topics 其他主题)
+* [十三.Data Structures and Algorithms 数据结构和算法](#十三.Data Structures and Algorithms 数据结构和算法)
+
+<br>
+
+---
+<br>
+
+## 一.Kotlin for Android 面试须知
 
 - [掌握 kotlin 协程](https://github.com/youngWM/android-interview-questions-CN/blob/master/Kotlin%20for%20Android%20%E9%9D%A2%E8%AF%95%E9%A1%BB%E7%9F%A5/%E6%8E%8C%E6%8F%A1%20Kotlin%20%E5%8D%8F%E7%A8%8B.md) -Mastering Kotlin Coroutines
 - [精通 Kotlin 协程](https://amitshekhar.me/blog/kotlin-coroutines) -
@@ -62,30 +92,19 @@
 - [Kotlin 中的伴随对象](https://amitshekhar.me/blog/companion-object-in-kotlin) - Companion object in Kotlin
 - [Kotlin Multiplatform 如何工作？](https://amitshekhar.me/blog/how-does-the-kotlin-multiplatform-work) - How does the Kotlin Multiplatform work?
 
-## **获取指导: [amitshekhar.me](https://amitshekhar.me)**
 
-## 内容 - Android面试题
+<br>
 
-* [Android 核心](#Android核心)
-* [Android 库](#android库)
-* [Android Architecture](#android-architecture)
-* [Android 设计问题](#android-design-problem)
-* [Android 单元测试](#android-unit-testing)
-* [Android 工具与技术](#android-tools-and-technologies)
-* [Java 和 Kotlin](#java-and-kotlin)
-* [Kotlin 协程](#kotlin-coroutines)
-* [Kotlin Flow API](#kotlin-flow-api)
-* [Jetpack Compose](#jetpack-compose)
-* [其他主题](#other-topics)
-* [数据结构与算法](#data-structures-and-algorithms)
+---
+<br>
 
-### Android核心
+### 二.Android核心
 
-安卓面试题:
+<br>
 
 #### 基础
 
-* 为什么 Android 应用程序会滞后？[英文资料](https://amitshekhar.me/blog/android-app-lag)- Why does an Android App lag?
+* **为什么 Android 应用程序会滞后？**[英文资料](https://amitshekhar.me/blog/android-app-lag)- Why does an Android App lag?
 
 * **什么是`Context`？它是如何使用的？** - [Android 应用程序中的上下文](https://amitshekhar.me/blog/context-in-android-application) -What is `Context`? How is it used?
 
@@ -98,7 +117,12 @@
 * **什么是 `Application` 类?**
     - Android 中的 `Application` 类是 Android 应用程序中的基类，它包含所有其他组件，例如活动和服务。当您的应用程序/程序包的进程被创建时，`Application` 类或 `Application` 类的任何子类在任何其他类之前被实例化。
   （The Application class in Android is the base class within an Android app that contains all other components such as activities and services. The Application class, or any subclass of the Application class, is instantiated before any other class when the process for your application/package is created.）
-  
+
+<br>
+
+---
+<br>
+
 #### Activity 和 Fragment 活动和片段
 
 * **为什么建议只使用默认构造函数来创建一个`Fragment`？** - [英文资料](https://www.youtube.com/watch?v=CitBt0FZFIc)
@@ -139,6 +163,11 @@
 * **`addToBackStack()`提交fragment事务的目的是什么？** - What is the purpose of `addToBackStack()` while commiting fragment transaction?
     - 通过调用 `addToBackStack()`，将替换事务保存到后退堆栈，这样用户可以通过按“后退”按钮来撤销事务并返回前一个片段。By calling addToBackStack(), the replace transaction is saved to the back stack so the user can reverse the transaction and bring back the previous fragment by pressing the Back button. For more [英文资料](https://stackoverflow.com/questions/22984950/what-is-the-meaning-of-addtobackstack-with-null-parameter)
 
+<br>
+
+---
+<br>
+
 #### Views 和 ViewGroups 视图和视图组
 
 * **Android 中`View` 是什么？** What is `View` in Android?
@@ -164,6 +193,11 @@
 
 * **Touch Control 和 Events 在 Android 中如何工作？** How does the Touch Control and Events work in Android?
 
+<br>
+
+---
+<br>
+
 #### Displaying Lists of Content 显示内容列表
 
 * **`ListView` 和 `RecyclerView` 和有什么不一样？** - [英文资料](https://stackoverflow.com/questions/26728651/recyclerview-vs-listview) What is the difference between `ListView` and `RecyclerView`?
@@ -178,6 +212,12 @@
 
 * **什么是`SnapHelper`？** - [SnapHelper](https://amitshekhar.me/blog/snaphelper)SnapHelper What is `SnapHelper`?
 
+
+<br>
+
+---
+<br>
+
 #### Dialogs and Toasts 对话和吐司
 
 * **Android中的 `Dialog`有什么？** - [英文资料](https://developer.android.com/guide/topics/ui/dialogs)What is `Dialog` in Android?
@@ -185,6 +225,11 @@
 * **Android中的 `Toast` 有什么？** - [英文资料](https://developer.android.com/guide/topics/ui/notifiers/toasts)  What is `Toast` in Android?
 
 * **`Dialog`和`Dialog Fragment`之间有什么区别？** - [英文资料](https://stackoverflow.com/questions/7977392/android-dialogfragment-vs-dialog)  What the difference between `Dialog` and `Dialog Fragment`?
+  
+<br>
+
+---
+<br>
 
 #### Intents and Broadcasting 意图和广播
 
@@ -213,6 +258,11 @@
 
 * **有哪些不同类型的广播Broadcasts？** - [英文资料](https://developer.android.com/guide/components/broadcasts) What are the different types of Broadcasts?
 
+<br>
+
+---
+<br>
+
 #### Services服务
 
 * **什么是`Service`？** - [英文资料](https://developer.android.com/guide/components/services) What is `Service`?
@@ -220,6 +270,11 @@
 * **`Service`对比`IntentService`** `Service` vs `IntentService`.
 
 * **什么是`JobScheduler`？** - [英文资料](https://developer.android.com/reference/android/app/job/JobScheduler)   What is a `JobScheduler`?
+
+<br>
+
+---
+<br>
 
 #### Inter-process Communication 进程间通信
 
@@ -232,6 +287,11 @@
 * **您可以在 Android 中使用什么进行后台处理？** - [英文资料](https://developer.android.com/guide/background)  What can you use for background processing in Android?
 
 * **什么是`ContentProvider`，它通常用于什么？** - [英文资料](https://developer.android.com/guide/topics/providers/content-provider-basics) and [here](https://developer.android.com/guide/topics/providers/content-providers) What is a `ContentProvider` and what is it typically used for?
+
+<br>
+
+---
+<br>
 
 #### Long-running Operations 长时间运行的操作
 
@@ -268,6 +328,11 @@
 
 * **Android 内存泄漏和垃圾收集** Android Memory Leak and Garbage Collection
 
+<br>
+
+---
+<br>
+
 #### Working With Multimedia Content 处理多媒体内容
 
 * **你如何处理 Android 中的位图，因为它占用太多内存？** - [英文资料](https://developer.android.com/topic/performance/graphics/load-bitmap) and [here](https://developer.android.com/topic/performance/graphics/manage-memory) How do you handle bitmaps in Android as it takes too much memory?
@@ -279,6 +344,11 @@
 * **说说`Bitmap`池** - [英文资料](https://amitshekhar.me/blog/bitmap-pool) Tell about the `Bitmap` pool.
 
 * **图像压缩是如何进行的？** How image compression is preformed?
+
+<br>
+
+---
+<br>
 
 #### Data Saving 数据保存
 
@@ -298,6 +368,11 @@
     - `commit()` 通过同步写入数据，立即返回成功或失败的布尔值。 commit() returns a boolean value of success or failure immediately by writing data synchronously.
     - `apply()` 是异步的，它不会返回任何布尔响应。如果您有未完成的 apply() 并且您正在执行 commit()，那么 commit() 将被阻止，直到 apply() 未完成。apply() is asynchronous and it won't return any boolean response. If you have an apply() outstanding and you are performing commit(), then the commit() will be blocked until the apply() is not completed.
 
+<br>
+
+---
+<br>
+
 #### Look and Feel 外观和感觉
 
 * **什么是`Spannable`？** What is a `Spannable`?
@@ -313,6 +388,11 @@
 
 * **解释密度独立像素**  Explain about Density Independence Pixel
 
+<br>
+
+---
+<br>
+
 #### Memory Optimizations 内存优化
 
 * **方法什么是`onTrimMemory()`？** - [英文资料](https://developer.android.com/topic/performance/memory) What is the `onTrimMemory()` method?
@@ -320,6 +400,11 @@
 * **OutOfMemory 是如何发生的？** How does the OutOfMemory happens?
 
 * **您如何发现 Android 应用程序中的内存泄漏？** How do you find memory leaks in Android applications?
+
+<br>
+
+---
+<br>
 
 #### Battery Life Optimizations 电池寿命优化
 
@@ -329,19 +414,39 @@
 
 * **什么是`overdraw`？** - [英文资料](https://developer.android.com/topic/performance/rendering/overdraw.html)  What is `overdraw`?
 
+<br>
+
+---
+<br>
+
 #### Supporting Different Screen Sizes 支持不同的屏幕尺寸
 
 * **您如何支持不同类型的决议？** - [英文资料](https://developer.android.com/training/multiscreen/screensizes)  How do you support different types of resolutions?
 
+<br>
+
+---
+<br>
+
 #### Permissions 权限
 
 * **权限有哪些不同的保护级别？** What are the different protection levels in permission?
+
+<br>
+
+---
+<br>
 
 #### Native Programming 本机编程
 
 * **什么是 NDK，它为什么有用？** - 英文资料: [Android NDK and RenderScript](https://amitshekhar.me/blog/ndk-and-renderscript)  What is the NDK and why is it useful?
 
 * **什么是渲染脚本？**[Android NDK and RenderScript](https://amitshekhar.me/blog/ndk-and-renderscript)  What is renderscript?
+
+<br>
+
+---
+<br>
 
 #### Android System Internal 安卓系统内部
 
@@ -354,6 +459,11 @@
 * **什么是DEX** - [英文资料](https://developer.android.com/reference/dalvik/system/DexFile)  What is DEX?
 
 * **你能手动调用垃圾收集器吗？** - [是否可以在 Android 中强制垃圾收集？](https://www.youtube.com/watch?v=fPEjpFKo1-Q) Can you manually call the Garbage collector?
+
+<br>
+
+---
+<br>
 
 #### Android Jetpack 安卓喷气背包
 
@@ -374,6 +484,11 @@
 * **Android 中 `WorkManager` 的用例** Use-cases of WorkManager in Android.
 
 * **`ViewModel` 如何在内部工作？** How ViewModel work internally?
+
+<br>
+
+---
+<br>
 
 #### Others 其他的
 
@@ -407,7 +522,12 @@
 
 * **如何以编程方式在 Android 中截取屏幕截图？** How to take screenshot in Android programmatically?
 
-### Android Libraries 安卓库
+<br>
+
+---
+<br>
+
+### 三.Android Libraries 安卓库
 
  安卓面试题:
 
@@ -425,7 +545,7 @@
 
 * **什么时候使用 RxJava 的 `defer` 运算符？** [defer 运算符](https://amitshekhar.me/blog/rxjava-defer-operator) RxJava Defer Operator  When to use `defer` operator of RxJava?
 
-* **RxJava 中如何使用 `Timer`、`Delay` 和 `Interval` 运算符？  ** - [英文资料](https://amitshekhar.me/blog/rxjava-interval-operator) How are Timer, Delay, and Interval operators used in RxJava?
+* **RxJava 中如何使用 `Timer`、`Delay` 和 `Interval` 运算符？** - [英文资料](https://amitshekhar.me/blog/rxjava-interval-operator) How are Timer, Delay, and Interval operators used in RxJava?
 
 * **如何使用 RxJava 并行进行两个网络调用？** - [RxJava Zip Operator](https://amitshekhar.me/blog/rxjava-zip-operator) How to make two network calls in parallel using RxJava?
  
@@ -459,7 +579,12 @@
 
 * **Kotlin 中的 `Flow` 什么是？** - [英文资料](https://amitshekhar.me/blog/flow-api-in-kotlin)   What is Flow in Kotlin?
 
-### Android Architecture 安卓架构
+<br>
+
+---
+<br>
+
+### 四.Android Architecture 安卓架构
 
 安卓面试题：
 
@@ -485,7 +610,12 @@
 
 * **讲述一些关于干净代码的事情**  Tell something about clean code
 
-### Android Design Problem 安卓设计问题
+<br>
+
+---
+<br>
+
+### 五.Android Design Problem 安卓设计问题
 
 安卓面试题：
 
@@ -513,7 +643,12 @@
 
 * **语音和视频通话如何工作？** - [英文资料](https://amitshekhar.me/blog/voice-and-video-call) How do Voice And Video Call Work?
 
-### Android Unit Testing 安卓单元测试
+<br>
+
+---
+<br>
+
+### 六.Android Unit Testing 安卓单元测试
 
  安卓面试题：
 
@@ -537,7 +672,12 @@
 
 * **描述代码覆盖率** Describe code coverage.
 
-### Android Tools And Technologies 安卓工具和技术
+<br>
+
+---
+<br>
+
+### 七.Android Tools And Technologies 安卓工具和技术
 
 安卓面试题：
 
@@ -583,9 +723,13 @@
 
 * **如何在不更新应用程序的情况下更改应用程序中的某些参数？** How to change some parameters in an app without app update?
 
-### Java 和 Kotlin
+<br>
 
-安卓面试题：
+---
+<br>
+
+### 八.Java 和 Kotlin
+
 
 #### OOP面向对象
 
@@ -758,6 +902,11 @@
         - 迭代器 Iterator [Wikipedia](https://en.wikipedia.org/wiki/Iterator_pattern?oldformat=true)
         - 策略 Strategy [Wikipedia](https://en.wikipedia.org/wiki/Strategy_pattern?oldformat=true)
 
+<br>
+
+---
+<br>
+
 #### Collections and Generics 集合和泛型
 
 * **数组与数组列表** - [英文资料](https://stackoverflow.com/questions/32020000/what-is-the-difference-between-an-array-arraylist-and-a-list/32020072) Arrays Vs ArrayLists
@@ -782,6 +931,11 @@
 
 * **什么是 Java 优先级队列？** What is Java PriorityQueue?
     - 在优先队列中，每个元素都有一定的优先级，所有元素都出现在一个队列中。这些操作是根据优先级执行的。In Priority Queue, each element is having some priority and all the elements are present in a queue. The operations are performed based on the priority.
+
+<br>
+
+---
+<br>
 
 #### Objects and Primitives 对象和基元
 
@@ -895,6 +1049,11 @@
     - 实例变量是那些在类中声明的变量，它们的值在类的一个实例和另一个实例之间可能不同，但它们始终需要该类的实例存在。Instance variables are the ones, that are declared in classes and their value can be different from one instance of the class to another, but they always require that class' instance to exist.
     - 类变量是那些static在类的主体中标有关键字的变量。它们在那个类的所有实例中只能有一个值（在一个地方改变它会在它们的类中改变它，因此在所有实例中）并且甚至可以在没有那个类的实例的情况下被检索（如果它们的访问修饰符允许的话） .Class variables are those, that are marked with `static` keyword in their class' body. They can only have one value across all instances of that class (changing it in one place will change it in their class and, therefore, in all instances) and can even be retrieved without that class' instance (if their access modifier allows it).
 
+<br>
+
+---
+<br>
+
 #### Java Memory Model and Garbage Collector Java 内存模型和垃圾收集器
 
 * **什么是垃圾收集器？它是如何工作的？** What is garbage collector? How does it work?
@@ -909,6 +1068,11 @@
 
 * **Java 中的强引用、软引用、弱引用和虚引用什么是？** What are strong, soft, weak and phantom references in Java?
 
+<br>
+
+---
+<br>
+
 #### Concurrency 并发
 
 * **关键字什么是synchronized意思？** What does the keyword `synchronized` mean?
@@ -918,6 +1082,11 @@
 * **什么是volatile修饰符？**  What is `volatile` modifier?
 
 * **原子包中的类公开了一组通用方法：get、set,、lazyset、compareAndSet和weakCompareAndSet。请描述它们。 The classes in the atomic package expose a common set of methods: `get`, `set,`, `lazyset`, `compareAndSet`, and `weakCompareAndSet`. Please describe them.**
+
+<br>
+
+---
+<br>
 
 #### Exceptions 例外情况
 
@@ -1188,7 +1357,12 @@
 
 * **讲述 Kotlin 中的集合** Tell about the Collections in Kotlin
 
-### Kotlin Coroutines Kotlin 协程
+<br>
+
+---
+<br>
+
+### 九.Kotlin 协程
 
 Kotlin Coroutines for Android Interview 你应该知道的话题：Topics you should know in Kotlin Coroutines for Android Interview:
 
@@ -1204,7 +1378,12 @@ Kotlin Coroutines for Android Interview 你应该知道的话题：Topics you sh
 您可以在这里学习这些主题：[Master Kotlin Coroutines](https://amitshekhar.me/blog/kotlin-coroutines)
 
 
-### Kotlin Flow API 科特林流 API
+<br>
+
+---
+<br>
+
+### 十.Kotlin Flow API
 
 Android 面试中 Kotlin Flow API 你应该知道的主题： Topics you should know in Kotlin Flow API for Android Interview:
 
@@ -1217,7 +1396,13 @@ Android 面试中 Kotlin Flow API 你应该知道的主题： Topics you should 
 
 您可以在这里学习这些主题：Kotlin Flow API You can learn these topics here: [Kotlin Flow API](https://amitshekhar.me/blog/flow-api-in-kotlin)
 
-### Jetpack Compose Jetpack 
+
+<br>
+
+---
+<br>
+
+### 十一.Jetpack Compose
 
 您应该在 Jetpack Compose for Android Interview 中了解的主题： Topics you should know in Jetpack Compose for Android Interview:
 
@@ -1232,7 +1417,12 @@ Android 面试中 Kotlin Flow API 你应该知道的主题： Topics you should 
 * Gestures, Animation 手势、动画
 * CompositionLocal 组合局部
 
-### Other Topics 其他话题
+<br>
+
+---
+<br>
+
+### 十二.Other Topics 其他主题
 
 安卓面试题：:
 
@@ -1280,9 +1470,19 @@ Android 面试中 Kotlin Flow API 你应该知道的主题： Topics you should 
 
 * **如何在准确时间显示本地通知？** How to show local Notification at an exact time?
 
-### Data Structures and Algorithms 数据结构和算法
+<br>
+
+---
+<br>
+
+### 十三.Data Structures and Algorithms 数据结构和算法
 
 * **Android 开发人员在下次面试时应该了解这些数据结构**[检查此处](https://amitshekhar.me/blog/android-developer-should-know-these-data-structures-for-next-interview) Android Developer should know these Data Structures for Next Interview
+
+<br>
+
+---
+<br>
 
 ### 发现这个项目很有用❤️ Found this project useful :heart:
 
@@ -1294,6 +1494,11 @@ Android 面试中 Kotlin Flow API 你应该知道的主题： Topics you should 
 - [YouTube](https://www.youtube.com/@amitshekhar)
 - [LinkedIn](https://www.linkedin.com/in/amit-shekhar-iitbhu)
 - [GitHub](https://github.com/amitshekhariitbhu)
+
+<br>
+
+---
+<br>
 
 ### License
 ```
@@ -1311,6 +1516,11 @@ Android 面试中 Kotlin Flow API 你应该知道的主题： Topics you should 
    See the License for the specific language governing permissions and
    limitations under the License.
 ```
+
+<br>
+
+---
+<br>
 
 ### Contributing to 
 Just make pull request. You are in!
